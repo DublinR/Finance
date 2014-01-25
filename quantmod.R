@@ -1,3 +1,4 @@
+# http://gekkoquant.com/2012/05/13/quantmod-basics-stock-data-download-and-manipulation/
 install.packages("quantmod") #Install the quantmod library
 library("quantmod")  #Load the quantmod Library
 stockData <- new.env() #Make a new environment for quantmod to store data in
