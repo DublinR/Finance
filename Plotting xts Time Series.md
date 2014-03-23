@@ -1,8 +1,8 @@
-SPY SPDR S&P 500 ETF Trust
-QQQ PowerShares NASDAQ QQQ Trust
-GDX Market Vectors Gold Miners ETF
-DBO PowerShares DB Oil Fund (ETF)
-VWO Vanguard FTSE Emerging Markets ETF
+- SPY SPDR S&P 500 ETF Trust
+- QQQ PowerShares NASDAQ QQQ Trust
+- GDX Market Vectors Gold Miners ETF
+- DBO PowerShares DB Oil Fund (ETF)
+- VWO Vanguard FTSE Emerging Markets ETF
 
 We first obtain the data using quantmod, going back to January 2007:
 <pre><code>
@@ -18,7 +18,7 @@ GDX.Close <- GDX[,4]
 DBO.Close <- DBO[,4]
 VWO.Close <- VWO[,4]
 </code></pre>
-What we want is the set of cumulative returns for each, in the sense of the cumulative value of $1 over time.  To do this, it is simply a case of dividing each daily price in the series by the price on the first day of the series.  As SPY.Close[1], for example, is itself an xts object, we need to coerce it to numeric in order to carry out the division:
+What we want is the set of cumulative returns for each, in the sense of the cumulative value of $1 over time.  To do this, it is simply a case of dividing each daily price in the series by the price on the first day of the series.  As *SPY.Close[1]*, for example, is itself an **xts** object, we need to coerce it to numeric in order to carry out the division:
 <pre><code>
 SPY1 <- as.numeric(SPY.Close[1])
 QQQ1 <- as.numeric(QQQ.Close[1])
@@ -26,7 +26,7 @@ GDX1 <- as.numeric(GDX.Close[1])
 DBO1 <- as.numeric(DBO.Close[1])
 VWO1 <- as.numeric(VWO.Close[1])
 </code></pre>
-Then, it’s a case of dividing each series by the price on the first day, just as one would divide an R vector by a scalar.  For convenience of notation, we’ll just save these results back into the original ETF ticker names and overwrite the original objects:
+Then, it’s a case of dividing each series by the price on the first day, just as one would divide an `R` vector by a scalar.  For convenience of notation, we’ll just save these results back into the original ETF ticker names and overwrite the original objects:
 <pre><code>
 SPY <- SPY.Close/SPY1
 QQQ <- QQQ.Close/QQQ1
