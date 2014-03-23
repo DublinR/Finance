@@ -1,16 +1,17 @@
+To start, let’s look at five sets of cumulative returns for the following Exchange-traded funds (ETFs)
 - SPY SPDR S&P 500 ETF Trust
 - QQQ PowerShares NASDAQ QQQ Trust
 - GDX Market Vectors Gold Miners ETF
 - DBO PowerShares DB Oil Fund (ETF)
 - VWO Vanguard FTSE Emerging Markets ETF
 
-We first obtain the data using quantmod, going back to January 2007:
+We first obtain the data using **quantmod**, going back to January 2007:
 <pre><code>
 library(quantmod)
 tckrs <- c("SPY", "QQQ", "GDX", "DBO", "VWO")
 getSymbols(tckrs, from = "2007-01-01")
 </code></pre>
-Then, extract just the closing prices from each set:
+Then, extract just the closing prices (4th column) from each set:
 <pre><code>
 SPY.Close <- SPY[,4]
 QQQ.Close <- QQQ[,4]
@@ -34,11 +35,11 @@ GDX <- GDX.Close/GDX1
 DBO <- DBO.Close/DBO1
 VWO <- VWO.Close/VWO1
 </code></pre>
-We then merge all of these xts time series into a single xts object (à la a matrix):
-
+We then merge all of these xts time series into a single xts object (using a matrix):
+<pre><code>
 basket <- cbind(SPY, QQQ, GDX, DBO, VWO)
-
-Note that is.xts(basket)returns TRUE. We can also have a look at the data and its structure:
+</code></pre>
+Note that `is.xts(basket)` returns TRUE. We can also have a look at the data and its structure:
 <pre><code>
 > head(basket)
            SPY.Close QQQ.Close GDX.Close DBO.Close VWO.Close
@@ -61,14 +62,14 @@ Note that is.xts(basket)returns TRUE. We can also have a look at the data and it
 
 Note that we have a few NA values here.  This will not be of any significant consequence for demonstrating plotting functions, however.
 
-We will now look how we can plot all five series, overlayed on a single graph.  In particular, we will look at the plot(.) functions in both the zoo and xts packages.
+We will now look how we can plot all five series, overlayed on a single graph.  In particular, we will look at the `plot(.)` functions in both the **zoo** and **xts** packages.
 
 ## Using plot(.) in the zoo package
 The **xts** package is an extension of the zoo package, so coercing our xts object basket to a zoo object is a simple task:
 <pre><code>
  zoo.basket <- as.zoo(basket)
 </code></pre>
-Looking at `head(zoo.basket)` and `tail(zoo.basket)`, we will get output that looks the same as what we got for the original xts basket object, as shown above; the date to data mapping is preserved. The `plot(.)` function provided in zoo is very simple to use, as we can use the whole zoo.basket object as input, and the plot(.) function will overlay the time series and scale the vertical axis for us with the help of a single parameter setting, namely the screens parameter.
+Looking at `head(zoo.basket)` and `tail(zoo.basket)`, we will get output that looks the same as what we got for the original xts basket object, as shown above; the date to data mapping is preserved. The `plot(.)` function provided in zoo is very simple to use, as we can use the whole zoo.basket object as input, and the `plot(.)` function will overlay the time series and scale the vertical axis for us with the help of a single parameter setting, namely the screens parameter.
 
 Let’s now look at the code and the resulting plot in the following example, and then explain what’s going on:
 <pre><code>
