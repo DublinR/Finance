@@ -39,7 +39,7 @@ We then merge all of these xts time series into a single xts object (à la a mat
 basket <- cbind(SPY, QQQ, GDX, DBO, VWO)
 
 Note that is.xts(basket)returns TRUE. We can also have a look at the data and its structure:
-
+<pre><code>
 > head(basket)
            SPY.Close QQQ.Close GDX.Close DBO.Close VWO.Close
 2007-01-03 1.0000000  1.000000 1.0000000        NA 1.0000000
@@ -48,8 +48,7 @@ Note that is.xts(basket)returns TRUE. We can also have a look at the data and it
 2007-01-08 0.9987267  1.014801 0.9705959 1.0024722 0.9720154
 2007-01-09 0.9978779  1.019889 0.9640906 0.9929955 0.9487805
 2007-01-10 1.0012025  1.031915 0.9526412 0.9517923 0.9460847
-
-<pre><code>
+>
 > tail(basket)
            SPY.Close QQQ.Close GDX.Close DBO.Close VWO.Close
 2014-01-10  1.302539        NA 0.5727296  1.082406 0.5118100
@@ -64,12 +63,12 @@ Note that we have a few NA values here.  This will not be of any significant con
 
 We will now look how we can plot all five series, overlayed on a single graph.  In particular, we will look at the plot(.) functions in both the zoo and xts packages.
 
-Using plot(.) in the zoo package
-The xts package is an extension of the zoo package, so coercing our xts object basket to a zoo object is a simple task:
-
+## Using plot(.) in the zoo package
+The **xts** package is an extension of the zoo package, so coercing our xts object basket to a zoo object is a simple task:
+<pre><code>
  zoo.basket <- as.zoo(basket)
-
-Looking at head(zoo.basket) and tail(zoo.basket), we will get output that looks the same as what we got for the original xts basket object, as shown above; the date to data mapping is preserved. The plot(.) function provided in zoo is very simple to use, as we can use the whole zoo.basket object as input, and the plot(.) function will overlay the time series and scale the vertical axis for us with the help of a single parameter setting, namely the screens parameter.
+</code></pre>
+Looking at `head(zoo.basket)` and `tail(zoo.basket)`, we will get output that looks the same as what we got for the original xts basket object, as shown above; the date to data mapping is preserved. The `plot(.)` function provided in zoo is very simple to use, as we can use the whole zoo.basket object as input, and the plot(.) function will overlay the time series and scale the vertical axis for us with the help of a single parameter setting, namely the screens parameter.
 
 Let’s now look at the code and the resulting plot in the following example, and then explain what’s going on:
 <pre><code>
