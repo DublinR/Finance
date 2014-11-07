@@ -1,0 +1,10 @@
+getSymbols {quantmod} R Documentation 
+
+Load and Manage Data from Multiple Sources
+Description
+Functions to load and manage Symbols in specified environment. Used by specifyModel to retrieve symbols specified in first step of modelling procedure. Not a true S3 method, but methods for different data sources follow an S3-like naming convention. Additional methods can be added by simply adhering to the convention. 
+
+Current src methods available are: yahoo, google, MySQL, FRED, csv, RData, and Oanda. 
+
+Data is loaded silently without user assignment by default. 
+
