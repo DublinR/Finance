@@ -1,0 +1,75 @@
+\documentclass[]{article}
+
+%opening
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+
+\section{Risk-Neutral Measures}
+
+A theoretical measure of probability derived from the assumption that the current value of financial assets is equal to their expected payoffs in the future discounted at the risk-free rate. Another assumption made is that there is an absence of arbitrage. The term derives its name from the fact that all financial assets have the same expected rate of return - i.e., the risk-free rate. 
+
+Also known as equivalent martingale measure or Q-measure. 
+
+
+The concept of a risk-neutral measure is used to price derivatives. The risk-free rate of return is the return on an investment where the theoretical risk is zero. In practice, the interest rate on three-month U.S. Treasury bills is commonly used as a proxy for the risk-free rate.
+%------------------------------------------------------------------------------------%
+\section{What is the Risk-Neutral Probability Measure?}
+% http://blog.smaga.ch/introduction-to-risk-neutral-pricing-theory/
+
+Usually, probabilities on events are expressed in terms of the so-called “real world” probability measure P, i.e, if a stock can either move up or down, and that you think that there is an equal chance for it to go either way, you would say that it will go up with probability p=12.
+
+However, when you want to compute the price of a financial asset X at time t=0, you would do it through the computation of its expected value of its discounted future cash flows. The problem is that investors discount risk with different rates depending on their risk aversion (they require a risk-premium), and you would need to perform an adjustment which is very difficult to estimate.
+
+Therefore we would like to be able to use a probability measure Q, equivalent to P (i.e that agrees on events that cannot happen) under which the investor is insensitive to risk. This means that when computing expectations using Q,  we can discount cash flows using the risk-free rate r.
+
+Mathematically, this is described by saying that under the risk-neutral probability measure Q, discounted prices are martingales:
+
+ \[ P(0,t)Xt=EQ[P(0,T)XT|Ft] \]
+Rearranging a bit and using P(0,t)=1(1+r)t, you get:
+
+\[ (1+r)T−t=EQ[XTXt|Ft] \]
+That is, under $\mathbb{Q}$, the expected value of the return on a asset X from t to T is the risk-free rate r (compounded from t to T).
+
+The risk-neutral probability measure is the probability measure that makes return on an investment the risk-free rate. It is “built” for that purpose.
+
+
+The Fundamental Theorem of Asset Pricing (referred as FTAP thereafter) states that if markets are 
+arbitrage-free and complete, then there exists a risk-neutral 
+measure and it is unique  "A general version of the fundamental theorem of asset pricing" 
+(Freddy Delbaen and Walter Schachermayer, 1994).
+%---------------------------------------------------------------------------------%
+\section{How do we characterize the risk-neutral measure?}
+Let’s take a simple example. Assume a stock S in a single step framework, where the initial 
+price is S0 . We define that after the single step, the price of the stock is either going up 
+(in state u) S1=S0⋅u with probability p or going down  (in state d) S1=S0⋅d with probability 1−p . 
+Such a framework needs that d<1+r<u.
+
+Let’s find the probability q such that discounted prices are martingales:
+
+\[ 1(1+r)0S0=EQ(S1(1+r)1|F0)=11+r(S0uq+S0d(1−q)) \]
+Dividing by S0 and multiplying by 1+r on both sides , we get
+
+\[1+r= uq+d(1−q)=uq+d−qd=d+q(u−d)\]
+And we can find easily that:
+
+\[q=1+r−du−d\]
+Ok, so we found the risk-neutral measure Q for S by finding that Q(S1=S0u)=q and 
+hence Q(S1=S0d)=1−q .
+%---------------------------------------------------------------------------------%
+\section{How do we use the risk-neutral measure?}
+Now, assume we want to price a derivative product X which pays 1 if S goes in state u and 0 otherwise.
+
+Using the FTAP, we can write
+
+\[X0 =EQ(X1(1+r)1|F0)=11+r EQ(1{S1=S0u})=11+rQ (S1=S0u)\]
+Note that by developing the possible outcomes of X1, we did not have to characterize the risk-neutral measure for X.
+
+Indeed, as we characterized $\mathbb{Q}$ for $S$, we can write:
+
+\[ X0=11+rQ(S1=S0u)=11+r 1+r−du−d \]
+This way, we easily managed to find the value of the derivative product X0 without having to worry about risk-aversion and without having to even know the real-world probability measure P.
+
+\end{document}

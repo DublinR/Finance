@@ -1,0 +1,80 @@
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{framed}
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+
+
+
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a 
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{FERM}\chead{}\rhead{Definitions}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+
+\title{Financial Engineering and Risk Management}
+\author{Revision Notes}
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+\section{Futures}
+%http://www.investopedia.com/terms/f/futures.asp
+
+A financial contract obligating the buyer to purchase an asset (or the seller to sell an asset), such as a physical commodity or a financial instrument, at a predetermined future date and price. Futures contracts detail the quality and quantity of the underlying asset; they are standardized to facilitate trading on a futures exchange. 
+
+Some futures contracts may call for physical delivery of the asset, while others are settled in cash. The futures markets are characterized by the ability to use very high leverage relative to stock markets. 
+
+Futures can be used either to hedge or to speculate on the price movement of the underlying asset. For example, a producer of corn could use futures to lock in a certain price and reduce risk (hedge). On the other hand, anybody could speculate on the price movement of corn by going long or short using futures. 
+
+%-------------------------------------- %
+\subsection*{Difference between Options and Futures}
+The primary difference between options and futures is that options give the holder the right to buy or sell the underlying asset at expiration, while the holder of a futures contract is obligated to fulfill the terms of his/her contract. 
+
+In real life, the actual delivery rate of the underlying goods specified in futures contracts is very low. This is a result of the fact that the hedging or speculating benefits of the contracts can be had largely without actually holding the contract until expiry and delivering the good(s). 
+
+For example, if you were long in a futures contract, you could go short in the same type of contract to offset your position. This serves to exit your position, much like selling a stock in the equity markets would close a trade.
+
+\section{Forward Contracts}
+% http://www.investopedia.com/terms/f/forwardcontract.asp
+
+A customized contract between two parties to buy or sell an asset at a specified price on a future date. A forward contract can be used for hedging or speculation, although its non-standardized nature makes it particularly apt for hedging. Unlike standard futures contracts, a forward contract can be customized to any commodity, amount and delivery date. A forward contract settlement can occur on a cash or delivery basis.
+
+
+Forward contracts do not trade on a centralized exchange and are therefore regarded as over-the-counter (OTC) instruments. While their OTC nature makes it easier to customize terms, the lack of a centralized clearinghouse also gives rise to a higher degree of default risk. As a result, forward contracts are not as easily available to the retail investor as futures contracts.
+
+\subsection*{Forward Contract Example}
+Consider the following example of a forward contract. Assume that an agricultural producer has 2 million bushels of corn to sell six months from now, and is concerned about a potential decline in the price of corn. It therefore enters into a forward contract with its financial institution to sell 2 million bushels of corn at a price of $\$4.30$ per bushel in six months, with settlement on a cash basis.
+\newline
+
+\noindent In six months, the spot price of corn has three possibilities:
+
+\begin{itemize}
+\item It is exactly $\$4.30$ per bushel: In this case, no monies are owed by the producer or financial institution to each other and the contract is closed.  
+
+\item It is higher than the contract price, say $\$5$ per bushel: The producer owes the institution $\$1.4$ million, or the difference between the current spot price and the contracted rate of $\$4.30$.
+
+\item It is lower than the contract price, say $\$3.50$ per bushel: The financial institution will pay the producer $\$1.6$ million, or the difference between the contracted rate of $\$4.30$ and the current spot price.
+\end{itemize}
+The market for forward contracts is huge, since many of the world’s biggest corporations use it to hedge currency and interest rate risks. However, since the details of forward contracts are restricted to the buyer and seller, and are not known to the general public, the size of this market is difficult to estimate. The large size and unregulated nature of the forward contracts market means that it may be susceptible to a cascading series of defaults in the worst-case scenario. While banks and financial corporations mitigate this risk by being very careful in their choice of counterparty, the possibility of large-scale default does exist.
+
+\paragraph
+Another risk that arises from the non-standard nature of forward contracts is that they are only settled on the settlement date, and are not marked-to-market like futures. What if the forward rate specified in the contract diverges widely from the spot rate at the time of settlement? In this case, the financial institution that originated the forward contract is exposed to a greater degree of risk in the event of default or non-settlement by the client than if the contract were marked-to-market regularly.
+
+\end{document}

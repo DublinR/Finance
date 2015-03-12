@@ -1,0 +1,10 @@
+Historical Simulation in Finance
+====================================
+Value-at-Risk analysis is a procedure for predicting the Value-at-Risk (VaR) by 'simulating' or constructing the cumulative distribution function (cdf) of assets returns over time. Unlike most parametric VaR models, Historical Simulation does not assume any distribution on the asset returns. Also, it is relatively easy to implement. 
+However, there is a couple of shortcomings of historical simulation, and first of all is that it imposes a restriction on the estimation assuming asset returns are independent and identically distributed (iid) which clearly is not the case. From empirical evidence, it is known that asset returns are clearly not independent as they exhibit certain patterns such as volatility clustering. Therefore it can be unrealistic to assume iid in asset returns. 
+The second restriction relates to time. In Historical Simulation, it applies equal weights to all returns of the whole period and this is inconsistent with the nature where there is diminishing predictability of data that are further away from the present. These two shortcomings leads economists and financial experts to further develop other non-parametric, semi-parametric and parametric models.
+
+### Weighted Historical Simulation
+Like the traditional Historical Simulation technique, Weighted Historical Simulation applies decreasing weights to returns that are further away from the present, which overcomes the inconsistency of historical simulation with diminishing predictability of data that are further away from the present. However, Weighted Historical Simulation still assumes iid in asset returns.
+### Filtered Historical Simulation
+Filtered Historical Simulation is a semi-parametric technique in forecasting VaR. The return in this case is no longer assumed to be iid, rather there is an additional innovation term v is now assumed to be iid instead. This allows the means and variances to be 'filtered away', coupled with an empirically estimated cdf, it becomes a more realistic model in predicting VaR.

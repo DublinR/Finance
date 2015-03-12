@@ -1,0 +1,25 @@
+
+\begin{frame}{\bf \tcb{R in Finance}}
+\begin{itemize}\itemsep0.25cm
+\item[1] Introduction
+\item[2]
+\item[3] The \textbf{\texttt{PerformanceAnalytics}} function
+\item[4]
+\item[5] 
+\item[6]
+\item[7] Actuar
+\item[8]
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{verbatim}
+install.packages("PerformanceAnalytics")
+    # Select Mirror etc
+library(PerformanceAnalytics)
+
+
+data(edhec)
+charts.PerformanceSummary(edhec[,c(1,13)])
+\end{verbatim}

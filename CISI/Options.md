@@ -1,0 +1,31 @@
+Options - Section 4.6
+=====================
+Options - underlying mechanics
+- Call Options
+- Put Options
+- Premium
+- Writer & Holder
+- Options on Futures
+- Categorising Options
+ - In the Money (ITM)
+ - At the Money (ATM)
+ - Out of the Money (OTM)
+- Option Gearing
+- Option Pricing
+ - factors whic influence price
+- Use of Options
+ - Hedging
+ - Anticipating Future Cashflows
+ - Enhancing Portfolio Performance
+- Writing covered calls 
+- Basic Option Strategies
+ - Combinations
+ - Short Straddle
+ - Long Straddle
+ - Short Strangle
+ - Long Strangle
+- Spreads
+ - Bear Spread
+ - Bull Spread
+ - Long Butterfly Spread
+ - Short Butterfly Spread

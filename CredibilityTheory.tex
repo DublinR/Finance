@@ -1,0 +1,69 @@
+http://www.casact.org/pubs/forum/03wforum/03wf621.pdf
+What is credibility?
+Credibility theory is all about weighted averages. Different estimates of a quantity are to be
+weighted together. The more credible estimates get more weight.
+
+In the context of esrimating expected losses for a member of a class, there are two natural estimates:
+the experience of the member itsdf, and the average of the entire class. 
+
+The former is more relevant but also more volatile than the latter. Two general approaches have been taken to
+calculating weights in this case. The limited fluctuation approach is willing to accept the member
+experience at face value if it meets a pre-defined standard of stability (full credibility) and if not
+reduces the weight enough for the weighted average to meet the stability requirement. 
+
+The greatest accuracy approach measures relevance as well as stability and looks for the weights that
+will minimize an error measure. The average of the entire dass could be a very stable quantity,
+but if the members of the class tend to be quite different from each other, it could be of less
+relevance for any particular class. So the relevance of a wider class average to any member's
+mean is inversely related to the variability among the members of the class.
+
+The error measure used in the greatest accuracy approach is almost always expected squared error,
+so this method is often called "least squares credibility." In Europe it is sometimes called
+"classical credibility." The limited fluctuation approach is called classical in North America. Thus
+"classical" is a term worth avoiding, not only because of its geographic ambiguity, but also because
+it is a historical rather than a methodological description.
+
+Least squares credibility
+
+Suppose you have two independent estimates x and y of a quantity, with respective expected
+squared errors u and v. Take a weighted average a = zx + (1-z)y. The expected squared error of
+623
+a is w = zZu + (l-z)%. 
+What z minimizes w? Here is where the calculus comes in. The derivative dw/dz is 2zu + 2(z-1)v. 
+If you set that to zero you get: zu+zv = v, or z = v/(u+v). Then
+1-z =u(u+v). 
+This makes it look like each estimate gets a weight proportional to the expected
+squared error of the other. To express the weights as properties of the estimates themselves, note that
+
+  (1/u)(1/u) + (l/v)=11+(u/v)=vu+v= z.
+
+This shows that each estimate gets a weight proportional to the reciprocal of its expected squared error 1. Least squares credibility is
+an application of this principle.
+
+As an example, consider a class of risks. Suppose the losses I~i in year j for the ith member of the
+class are randomly distributed as follows:
+LIj ~- C + M i "4" •ij (1)
+
+where C is the class mean loss, C+Mi is the mean loss for the i-th member, and ~i is the random
+component for the jth period for this member. 
+
+It is not much of a restriction to assume that the Mi's average to zero as do the I~,i's. 
+
+Suppose the variance of the ivy's is t z and the variance of the random components I~ii all are si 2. Denote their average E(si 2) by s 2.
+
+Somerimes t2 is called the variance of the hypothetical means and s 2 the expected process variance.
+"Hypothetical" refers to the fact that the means C+Mi are not observed.
+With this setup, consider two estimates of member i mean losses: x, the average losses of the
+member for n periods, and y, the class mean loss C, which for now we will assume to know or at
+least be able to estimate well enough to ignore the error. To apply the inverse variance weightings,
+we needed to know the expected squared errors of x and y from the true value of C + M i.
+
+By the definitions, y's expected squared error is just t z. The expected squared error ofx is the
+expected value of its variance siZ/n, i.e., s2/n. 
+
+Then applying the inverse expected squared error principle gives a weight to x of z;
+
+	z =(n/s2)(n/s2)+(1/t2)=nn +(s2/t2). 
+
+This is the original
+Buhlmann credibility formula.
