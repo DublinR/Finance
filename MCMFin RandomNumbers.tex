@@ -1,0 +1,68 @@
+\documentclass[]{article}
+
+%opening
+
+
+\begin{document}
+\section{Part 1 : Overview}
+\section{Part 2 : Random Numbers}
+\subsection{\texttt{pdf}, \texttt{cdf} and \texttt{inv}}
+%2.1
+
+Consider a random variable with pdf $f(x)=x/2$ with $0\leq x \leq 2$. Compute the probability $P[X>1]$.
+
+
+
+\begin{itemize}
+
+\item[(a)] 1/2
+
+
+\item[(b)] 3/4
+
+
+\item[(c)] 1/4
+
+
+\item[(d)] 3/4
+
+\end{itemize}
+\subsection{Uniform Random Numbers}
+%2.2
+How does one generate a random variable U with uniform distribution in the interval [a,b] using rand, which generates uniform random numbers in the interval [0,1]?
+
+\subsection{Gaussian (Normal) Random Numbers}
+%2.3
+
+How does one generate a matrix of M rows and N columns of Gaussian random numbers whose mean is \texttt{mu} and whose standard deviation is \texttt{sigma} using \texttt{randn}, which generates standard Gaussian random numbers?
+
+
+\begin{itemize}
+
+\item[(a)] \texttt{X = mu + sigma * randn(N,M)} \textit{(Wrong Dimensions)}
+
+
+\item[(b)] \texttt{X = mu + sigma * randn(M,N)}
+
+
+\item[(c)] \texttt{X = sigma + mu * randn(N,M)} \textit{(Clearly Wrong)}
+
+
+\item[(d)] \texttt{X = sigma + mu * randn(M,N)} \textit{(Clearly Wrong)
+}
+\end{itemize}
+ 
+ 
+ 
+\subsection{ \texttt{normpdf}, \texttt{normcdf}, \texttt{norminv}}
+%% Section 2.4
+ 
+
+ 
+
+
+
+ 
+ 
+ 
+\end{document}
