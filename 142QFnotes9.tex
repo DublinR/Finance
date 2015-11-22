@@ -1,0 +1,68 @@
+
+
+Modelling High Frequency Data
+Modelling high frequency financial data
+Diurnality
+Autoregressive Conditional Duration
+
+Modelling High Frequency Data
+Modelling high frequency financial data 
+Traditionally, empirical studies in  finance employed data at the daily and monthly frequencies. Many models and methods have been developed for the study of such data. Recently, high frequency (intra-day) has become available to researchers, and empirical market microstructure is now an established sub-field within  finance. Many of the methods developed for lower frequency data are applicable to high frequency data, but there are a few places where differences exist, and we will study two of these in this topic. How one treats the massive amounts of high frequency data available should depend on the problem the researcher wishes to 4 address. 
+
+In many cases, the question can be addressed by aggregating the  tick data up to a certain frequency and then analyze the sequence of aggregated returns. Doing so makes the data 
+evenly spaced, and thus more similar to well-studied low frequency data. Many questions, however, are best addressed using tick data, meaning that we must  find ways of dealing with 
+the irregularly-spaced observations. 
+
+Another problem that arises in certain analyses of high frequency data is seasonality. Seasonality is a well-studied problem in macro- and micro-econometrics, but is not generally a concern for financial econometricians. Intra-daily patterns (called ‘diurnality’ rather than ‘seasonality’ ) in certain measures are significant and must be dealt with. Three places where diurnality in high frequency returns has been found to be prominent are in the conditional variance, in bid-ask spreads and in trade durations.  
+
+Mincer-Zarnowitz Regression
+
+Mincer-Zarnowitz Test
+
+1) Estimate the simple regression
+
+\[y_{n+h}= \alpha + \beta y{n+h}+ e_{n+h}\]
+
+2) Test the joint hypothesis	
+
+3) If the coefficients are different, it indicates systematic bias in the historical forecasts
+
+%=========================%
+
+Diurnality
+What is diurnality?
+Diurnality is simple "intra-daily seasonality". that is, Patterns in variables that vary through the day.
+For example, volatility in many stocks is higher at the start and close of the trade  day than during the middle of the day.
+
+How do the "dummy diurnaility " model and the "quadratic trend model" capture diurnality in volatility.
+
+What is the quadratic trend model, and what is it designed to capture.
+
+It is designed to capture "diurnality"
+
+
+%=========================================================%
+
+Autoregressive Conditional Duration
+
+Autocorrelation in raw durations is higher than in de-seasonalised durations due to the diurnal pattern in the durations. One model, proposed by Engle and Russell for modelling durations is the ‘autoregressive conditional duration’ model. This model is similar in spirit to the GARCH model. In certain situations the similarity between the ACD and the GARCH models even allows certain results for GARCH models to be applied to ACD models
+
+%=============================%
+
+Specifically, let  ~\tau_t~  denote the duration (the waiting time between consecutive trades) and assume that  ~\tau_t=\theta_t z_t ~, where  z_t  are independent and identically distributed random variables, positive and with  \operatorname{E}(z_t) = 1 and where the series  ~\theta_t~  is given by
+
+ \theta_t = \alpha_0 + \alpha_1 \tau_{t-1} + \cdots + \alpha_q \tau_{t-q} + \beta_1 \theta_{t-1} + \cdots + \beta_p\theta_{t-p} = \alpha_0 + \sum_{i=1}^q \alpha_i \tau_{t-i} + \sum_{i=1}^p \beta_i \theta_{t-i} 
+
+and where  ~\alpha_0>0~ ,  \alpha_i\ge 0,  \beta_i \ge 0 , ~i>0.
+
+
+
+Let $\psi_i=E(xi|Fi-1)$ be the conditional expectation of the adjusted duration between the (i-1)th and ith trades, 
+where Fi-1 is the information set available at the last trade.
+
+The basic ACD model is defined by
+x_i=\psi_i \epsilon_i           
+
+E(\epsilon_i ) = 1
+ 
+ 
