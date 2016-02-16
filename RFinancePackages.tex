@@ -1,0 +1,49 @@
+\documentclass[]{article}
+
+%opening
+\title{R Finance Packages}
+\author{www.Stats-Lab.com}
+
+\begin{document}
+
+\maketitle
+
+%========================================================
+\section{Quandl}
+
+One of the limitations of data available from Yahoo and Google is that it only dates back to January of 2007, while fund tracking and analysis will often require a time series of 20 years or more of historical returns.  Furthermore, some of the index-tracking ETF's didn't come into existence until the early 2000's, and new tracking funds for emerging markets and other indices have even shorter histories.  
+
+To get return data going back farther in time, it is common to look to futures markets, and Quandl provides a rich set of historical futures prices.
+
+\subsection{xts: eXtensible Time Series}
+
+Provide for uniform handling of `R`'s different time-based data classes by extending `zoo`, maximizing native format information preservation and allowing for user level customization and extension, while simplifying cross-class interoperability.
+
+The idea behind `xts` is to offer the user the ability to utilize a standard `zoo` object, while providing an mechanism to customize the object's meta-data, as well as create custom methods to handle the object in a manner required by the user.
+
+\section{zoo: Representing Time Series Data as zoo objects}
+The `ts` class is rather limited, especially for representing financial data that is not regularly spaced. For
+example, the ts class cannot be used to represent daily financial data because such data are only
+observed on business days. 
+
+That is, a business day time clock generally runs from Monday to Friday skipping the weekends. So data are equally spaced in time within the week but the spacing between
+Friday and Monday is different. 
+
+This type of irregular spacing cannot be represented using the ts class.
+
+A very flexible time series class is `zoo` (`Zeileis' ordered observations). The zoo class was designed to handle
+time series data with an arbitrary ordered time index. This index could be a regularly spaced sequence of
+dates, an irregularly spaced sequence of dates, or a numeric index. A zoo object essentially attaches
+date information with data.
+
+\section{PerformanceAnalytics}
+\textbf{Econometric tools for performance and risk analysis}
+This package is a collection of econometric functions for performance and risk analysis. This package aims to aid practitioners and researchers in utilizing the latest research in analysis of non-normal return streams. In general, it is most tested on return (rather than price) data on a regular scale, but most functions will work with irregular return data as well, and increasing numbers of functions will work with P$\&$L or price data where possible.
+
+\section{TTR: Functions and data to construct technical trading rules with \texttt{R}.}
+
+It is now possible to add dozens of technical analysis tools to chart very quickly to your analysis, with the `TTR` package..
+
+The current indicators from the TTR package, as well as a few originating in the quantmod package are listed on the packages vignette document.
+
+\end{document}
