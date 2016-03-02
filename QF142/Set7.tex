@@ -1,0 +1,28 @@
+
+
+Historical Simulation
+Models based on the Normal Distribution
+CAViaR
+Historical Simulation
+
+Advanatages
+Non parametric. Eay to describe and implement.
+
+Historical simulation has the beneﬁts that is is simple to implement, and it does not require us to specify the distribution of returns – we estimate this distribution non-parametrically using the empirical cdf, rather than estimating parameters of some speciﬁed distribution via maximum likelihood.
+
+
+Disadvantages
+
+However it requires the strong, and unrealistic, assumption that returns are iid through time, thus ruling out widely observed empirical regularities such as volatility clustering. Further, it requires an arbitrary decision on the number of observations, m, to use in estimating the cdf. If m is too large, then the most recent observations will get as much weight as very old
+observations. If m is too small then it is diﬃcult to estimate quantiles in the tails (as is required for VaR analysis) with precision.
+
+
+Filtered historical simulation is a semi-parametric technique in forecasting VaR.
+
+Models based on the Normal Distribution
+
+CAViaR
+The recently proposed conditional autoregressive value at risk (CAViaR) models require no such assumption, and allow quantiles to be modeled directly in an autoregressive framework. Although useful for risk management, CAViaR models do not provide volatility forecasts. Such forecasts are needed for several other important applications, such as option pricing and portfolio management. It has been found that, for a variety of probability distributions, there is a surprising constancy of the ratio of the standard deviation to the interval between symmetric quantiles in the tails of the distribution, such as the 0.025 and 0.975 quantiles. This result has been used in decision and risk analysis to provide an approximation of the standard deviation in terms of quantile estimates provided by experts. 
+
+
+
