@@ -1,0 +1,143 @@
+
+
+Variance and VaR
+Simulation based methods
+GARCH
+Generalized autoregressive conditional heteroskedasticity (GARCH)
+Hit Variables
+Implied volatility
+Diebold Mariano Tests for Volatility
+The Violation Ratio
+News Impact Curve
+Optimal forecasting
+Option Pricing
+Stochastic Processes
+
+
+
+Variance and VaR
+
+Value-at-risk (VaR)
+The value-at-risk (VaR) was developed in response to ﬁnancial disasters of the 1990s and obtained an increasingly important role in market risk management.
+The VaR summarizes the worst loss over a target horizon with a given level of conﬁdence. It is a popular approach because it provides a single quantity that summarizes the overall market risk faced by an institution or an individual investor
+
+Provide deﬁnitions for variance and for Value-at-Risk (VaR).
+
+(a) What are the pros and cons of VaR relative to variance as a measure of risk?
+(b) Describe the ‘historical simulation’ and RiskMetrics approaches to measuring Value-at-Risk.
+(c) Describe two of the key diﬀerences between ‘high frequency’ ﬁnancial data and lower frequency ﬁnancial data (such as daily or monthly data).
+(d) Describe two methods for capturing seasonality in returns, volatility and trade durations.
+
+
+‘high frequency’ ﬁnancial data 
+One diﬀerence is the irregularity of observation, high-frequency data being observed at diﬀerent time space intervals. Another problem that arises in certain analyses of high frequency data is seasonality. 
+Seasonality is a well-studied problem in macro- and micro-econometrics, but is not generally a concern for ﬁnancial econometricians. 
+Intra-daily patterns (called ‘diurnality’ rather than ‘seasonality’) in certain measures are signiﬁcant and must be dealt with. 
+Three places where diurnality in high frequency returns has been found to be prominent are in:
+• the conditional variance,
+• bid-ask spreads (the diﬀerence between the bid and ask prices quoted for a stock), and
+• trade durations.
+
+
+
+Simulation based methods
+HS
+Weighted HS
+Multi-period risk calculations
+Monte Carlo Simulation
+Filetered Historical Simulation
+GARCH 
+
+Autoregressive conditional heteroskedasticity (ARCH)
+
+In econometrics, autoregressive conditional heteroskedasticity (ARCH) (Engle, 1982) is a model used for forecasting volatility which captures the conditional heteroscedasticity (serial correlation of volatility) of financial returns. Today's conditional variance is a weighted average of past squared unexpected returns. ARCH is an AR process for the variance.
+Generalized autoregressive conditional heteroskedasticity (GARCH)
+A generalized autoregressive conditional heteroskedasticity (GARCH) (Bollerslev, 1986) model generalizes the ARCH model. Today's conditional variance is a function of past squared unexpected returns and its own past values. The model is an infinite weighted average of all past squared forecast errors, with weights that are constrained to be geometrically declining. GARCH is an ARMA(p,q) process in the variance
+
+
+Hit Variables
+
+Implied volatility
+
+Implied volatility is a forward looking estimator of volatility. The main drawback of this type of volatility estimator is that it hinges critically on the accuracy of the Black-Scholes option pricing formula, which is known to be only approximately correct. In particular, the Black-Scholes model relies on an assumption of constant conditional volatility, which is obviously not consistent with using implied volatilities for forecasting time-varying volatility. 
+
+More sophisticated option pricing formulas are available, and some of these may also be used to obtain implied volatility estimates, though this is not common. In general, researchers have found that implied volatilities tend to be higher than volatilities obtained from ARCH-type models, possibly reﬂecting the fact that the true distribution of asset returns has fatter tails than the log-normal distribution on which the Black-Scholes formula relies. The implied volatility smile (or smirk) refers to a plot of implied volatilities from a range of options on the same underlying asset with the same expiry, diﬀering only by their strike prices. 
+
+Each option price leads to one implied volatility, and if the Black-Scholes model was correct all of these implied volatilities would be equal. In general,
+researchers have found that deep out-of-the-money call options tend to lead to implied volatilities that are much higher than those from at-the-money call options. Call options that are deep in-the-money tend also to yield higher implied volatilities, though to a lesser extent than for out-of-the-money options.
+
+Diebold Mariano Tests for Volatility
+
+The Diebold-Mariano test compares the forecast accuracy of two forecast methods. The null hypothesis is that they have the same forecast accuracy.
+
+
+The Violation Ratio
+Deﬁne the violation ratio related to unconditional coverage tests for VaR forecasts.
+ 
+ 
+Violation Ratio VR
+ 
+VR =1Tt=1THiti-
+ 
+If the VaR forecast is optimal then the VR should be close to one.
+ 
+Links
+
+http://wifangtrade.com/Documents/ime-thicktails.pdf
+
+News Impact Curve
+
+The News Impact Curve is used to measure how new information is incorporated into volatility estimates.
+
+
+
+Optimal forecasting
+Optimality relates to whether a forecast is as good as it can be.
+
+Properties of Optimal Forecasts
+• Unbiased
+• 1‐step‐ahead errors are white noise
+• h‐step‐ahead errors are at most MA(h‐1)
+• Variance of h‐step‐ahead error is increasing in h
+• Forecast errors should be unforecastable
+
+
+Question 5 2010 Zone B
+(a) Show that under squared-error loss, the optimal forecast is the conditional expectation (mean) of the variable.
+(b) Under squared-error loss, provide at least three properties of the optimal forecasts.
+(c) Describe a test for forecast optimality when the forecasting exercise is done for one period ahead.
+
+
+
+Option Pricing
+Basic Definitions
+Option pricing under the normal distribution
+Allowing for Skewness and Kurtosos
+GARCH option pricing models
+Implied Volatility function models
+
+Stochastic Processes
+Deﬁne ‘white noise’ ?
+(b) What is iid white noise?
+(c) What is Gaussian white noise?
+
+RiskMetric
+
+RiskMetric assumes that the continuously compounded daily return of a portfolio follows a conditional normal distribution.
+ 
+Denote the daily log return by  rt and the information set available at time  t-1 by  Ft-1RiskMetrics assumes that rt|Ft-1N(t,t2) , where t is the conditional mean and t2 is the conditional variance of rt.
+ 
+The daily VaR of the portfolio under RiskMetrics is VaR = Amount of position 1.65t+1,
+ 
+and that of a k-day horizon VaR = Amount of position  1.65kt+1
+ 
+This is the "square root" ot time rule under RiskMetrics
+
+Time Series Analysos
+
+yt=yt-1+i+iy_{t}  = \theta_o y_{t-1} 
+ 
+iWN(0,2)\theta_{t}
+\gamma_i
+\epsilon_i
+
