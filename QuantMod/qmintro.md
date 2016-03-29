@@ -1,3 +1,5 @@
+QuantMod
+=================
 The Quantmod package allows you to develop, testing, and deploy of statistically based trading models.  It provides the infrastructure for downloading/importing data from a variety of locations, analyze that data and produce charts that help determine statistical trends.  I appreciated Digital Dude calling this package to my attention  in a recent comment.  I also noticed that Revolution Analytics had highlighted the package on its finance page.  Actually, I had come across quantmod a few months ago - and it instantly got me excited about the power of R.  To give you an idea of typical usage, the following creates a stock chart of the last three months of Apple stock data.
 
 <pre><code>
