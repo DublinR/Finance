@@ -56,7 +56,7 @@ Further reading:
 •J.C. Hull, Options, Futures and Other Derivatives (5th Edition), 2002, Prentice-Hall
 
 
-Section 5
+### Section 5
 Preparatory reading:
 •P. Wilmott, Paul Wilmott On Quantitative Finance, second edition, 2006, John Wiley. Chapters 39—42
 •M.Choudhry, Structural Credit Products: Credit Derivatives and Synthetic Securistisation, 2004, John Wiley.
@@ -66,7 +66,7 @@ Further reading:
 •J.C. Hull, Options, Futures and Other Derivatives (5th Edition), 2002, Prentice-Hall
 
 
-Section 6
+### Section 6
 Preparatory reading:
 •P. Wilmott, Paul Wilmott On Quantitative Finance, second edition, 2006, John Wiley.
 Chapters 22-29, 37, 45-48, 50, 51-53, 57, 73, 76-79, 82
@@ -97,7 +97,7 @@ S.N. Neftci, An Introduction to the Mathematics of Financial Derivatives, 1996, 
  
 
 
-Section 1
+### Section 1
 Preparatory reading:
 •P. Wilmott, Paul Wilmott Introduces Quantitative Finance, second edition, 2007, John Wiley. Chapters 4, 5, 7
 •M. Jackson and M. Staunton, Advanced Modelling in Finance Using Excel and VBA, 2001, John Wiley. Chapters 1 - 4
@@ -108,7 +108,7 @@ Further reading:
 •S.N., An Introduction to the Mathematics of Financial Derivatives, 1996, Academic Press
 
 
-Section 2
+### Section 2
 Preparatory reading:
 •P. Wilmott, Paul Wilmott Introduces Quantitative Finance, second edition, 2007, John Wiley.
 Chapters 1, 2, 3, 20-22
@@ -123,7 +123,7 @@ Further reading:
 •N. Taleb, Dynamic Hedging, 1996, John Wiley
 
 
-Section 3
+### Section 3
 Preparatory reading:
 •P. Wilmott, Paul Wilmott Introduces Quantitative Finance, second edition, 2007, John Wiley. Chapters 6, 8, 27-30
 •M. Jackson and M. Staunton, Advanced Modelling in Finance Using Excel and VBA, 2001, John Wiley.
@@ -140,7 +140,7 @@ Cambridge University Press
 •S.N. Neftci, An Introduction to the Mathematics of Financial Derivatives, 1996, Academic Press
 
 
-Section 4
+### Section 4
 Preparatory reading:
 •P. Wilmott, Paul Wilmott Introduces Quantitative Finance, 2001, John Wiley. Chapters 14—19
 •M. Jackson and M. Staunton, Advanced Modelling in Finance Using Excel and VBA, 2001, John Wiley.Chapters 14—16
@@ -162,7 +162,7 @@ Further reading:
 •J.C. Hull, Options, Futures and Other Derivatives (5th Edition), 2002, Prentice-Hall
 
 
-Section 6
+### Section 6
 Preparatory reading:
 •P. Wilmott, Paul Wilmott On Quantitative Finance, second edition, 2006, John Wiley.
 Chapters 22-29, 37, 45-48, 50, 51-53, 57, 73, 76-79, 82
