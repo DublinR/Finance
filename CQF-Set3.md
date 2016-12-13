@@ -16,7 +16,7 @@ Lecture 3.3
 Lecture 3.4
 Lecture 3.5
  
-Lecture 3.1
+### Lecture 3.1
 The assumptions that go into the Black-Scholes equation
 Foundations of options theory: delta hedging and no arbitrage
 The Black-Scholes partial differential equation
@@ -25,23 +25,27 @@ The Black-Scholes formulae for calls, puts and simple digitals
 The meaning and importance of the Greeks, delta, gamma, theta, vega and rho
 American options and early exercise
 Relationship between option values and expectations
-Lecture 3.2
+
+### Lecture 3.2
 The Greeks in detail
 Delta, gamma, theta, vega and rho
 Higher-order Greeks
 How traders use the Greeks
-Lecture 3.3
+
+### Lecture 3.3
 The justification for pricing by Monte Carlo simulation
 Grids and discretization of derivatives
 The explicit finite-difference method
-Lecture 3.4
+
+### Lecture 3.4
 The many types of volatility
 What the market prices of options tells us about volatility
 The term structure of volatility
 Volatility skews and smiles
 Exploiting your volatility models
 Should you hedge using implied or actual volatility?
-Lecture 3.5
+
+### Lecture 3.5
 Martingale theory and its relevance to pricing
 Its role in practice
 Examples
