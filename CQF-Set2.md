@@ -19,7 +19,8 @@ Lecture 2.3
 Lecture 2.4
 Lecture 2.5
 Lecture 2.6: Methods for Quantitative Finance: II
-Lecture 2.1
+
+### Lecture 2.1
 Measuring risk and return
 Benefits of diversification
 Modern Portfolio Theory and the Capital Asset Pricing Model
@@ -27,7 +28,8 @@ The efficient frontier
 Optimizing your portfolio
 How to analyze portfolio performance
 Alphas and betas
-Lecture 2.2
+
+### Lecture 2.2
 The time value of money
 Equities, commodities, currencies and indices
 Fixed and floating interest rates
@@ -38,13 +40,13 @@ Option jargon
 No arbitrage again and put-call parity
 How to draw payoff diagrams
 Simple option strategies
-Lecture 2.3
+### Lecture 2.3
 The meaning of Value at Risk (VaR)
 How VaR is calculated in practice
 Simulations and bootstrapping
 Simple volatility estimates
 The exponentially weighted moving average
-Lecture 2.4
+### Lecture 2.4
 A simple model for an asset price random walk
 Delta hedging
 No arbitrage
