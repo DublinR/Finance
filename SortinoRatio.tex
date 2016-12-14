@@ -1,0 +1,27 @@
+The Sortino ratio measures the risk-adjusted return of an investment asset, portfolio, or strategy.[1] It is a modification of the Sharpe ratio but penalizes only those returns falling below a user-specified target or required rate of return, while the Sharpe ratio penalizes both upside and downside volatility equally. Though both ratios measure an investment's risk-adjusted return, they do so in significantly different ways that will frequently lead to differing conclusions as to the true nature of the investment's return-generating efficiency.
+
+The Sortino ratio is used as a way to compare the risk-adjusted performance of programs with differing risk and return profiles. In general, risk-adjusted returns seek to normalize the risk across programs and then see which has the higher return unit per risk.[2]
+
+Contents  [hide] 
+1	Definition
+2	Usage
+3	See also
+4	References
+Definition[edit]
+The ratio {\displaystyle S} S is calculated as
+
+{\displaystyle S={\frac {R-T}{DR}}} S={\frac  {R-T}{DR}} ,
+where {\displaystyle R} R is the asset or portfolio average realized return, {\displaystyle T} T is the target or required rate of return for the investment strategy under consideration (originally called the minimum acceptable return MAR), and {\displaystyle DR} DR is the target semi-deviation (the square root of target semi-variance), termed downside deviation. {\displaystyle S} S is expressed in percentages and therefore allows for rankings in the same way as standard deviation.
+
+An intuitive way to view downside risk is the annualized standard deviation of returns below the target. Another is the square root of the probability-weighted squared below-target returns. The squaring of the below-target returns has the effect of penalizing failures at a quadratic rate. This is consistent with observations made on the behavior of individual decision making under uncertainty.
+
+{\displaystyle DR={\sqrt {\int _{-\infty }^{T}(T-r)^{2}f(r)\,dr}}} DR={\sqrt  {\int _{{-\infty }}^{T}(T-r)^{2}f(r)\,dr}}
+Here
+
+{\displaystyle DR} DR = downside deviation or (commonly known in the financial community) "downside risk" (by extension, {\displaystyle DR^{2}} DR^{2} = downside variance),
+
+{\displaystyle T} T = the annual target return, originally termed the minimum acceptable return MAR,
+
+{\displaystyle r} r = the random variable representing the return for the distribution of annual returns {\displaystyle f(r)} f(r), and
+
+{\displaystyle f(r)} f(r) = the distribution for the annual returns, e.g., the three-parameter lognormal distribution.
