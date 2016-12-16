@@ -1,0 +1,18 @@
+
+Financial Maths and Stats (5%)
+
+1) Statistics
+
+1) Introduction
+2) Sourcing and Presenting Data
+3) Measures of Centrality and Dispersion
+4) Diversification
+
+2) Financial Mathematics
+
+1) Introduction
+2) Simple and Compount Interest
+3) Annualized Compound Returns
+4) Discounting
+5) Calculating Real Returns
+6) Investment Project Appraisial
