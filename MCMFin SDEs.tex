@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+
+\begin{document}
+
+\section{Monte Carlo Methods in Finance}
+\subsection{Overview for Week 6}
+\begin{itemize}
+\item What is a stochastic differential equation?
+\item How can we simulate the trajectories that are an approximation to the solution of the SDE starting from a given initial condition using the stochastic Euler integration method?
+\item What is the volatility of the volatility in a stochastic volatility model?
+\item What is geometric brownian motion and how can it be used to model the time evolution of an asset in the stock market?
+\item For geometric brownian motion, how does the exact simulation scheme differ from the approximate simulation scheme given by the stochastic Euler method?
+\item Why can be the possible values of a process that follows a geometric brownian motion at a given instant in time be described using a lognormal distribution?
+\item How can we model the abrupt changes, or shocks in the price of an asset when there is a merger or an acquisition using the Merton jump-diffusion model?
+\end{itemize}
+%--------------------------------------------------------------------------------------------------------%
+%--------------------------------------------------------------------------------------------------------%
+\subsection{Geometric Brownian Motion}
+A geometric Brownian motion (GBM) (also known as exponential Brownian motion) is a continuous-time stochastic process in which the logarithm of the randomly varying quantity follows a Brownian motion (also called a Wiener process) with drift.[1] It is an important example of stochastic processes satisfying a stochastic differential equation (SDE); in particular, it is used in mathematical finance to model stock prices in the Black–Scholes model.
+%--------------------------------------------------------------------------------------------------------%
+%--------------------------------------------------------------------------------------------------------%
+\subsection{Geometric Brownian Motion : Technical Definition}
+A stochastic process $S_t$ is said to follow a GBM if it satisfies the following stochastic differential equation (SDE):
+ \[dS_t = \mu S_t\,dt + \sigma S_t\,dW_t \]
+where  $W_t$  is a Wiener process or Brownian motion and  $\mu$  ('the percentage drift') and  $\sigma$  ('the percentage volatility') are constants. The former is used to model deterministic trends, while the latter term is often used to model a set of unpredictable events occurring during this motion.
+%--------------------------------------------------------------------------------------------------------%
+%--------------------------------------------------------------------------------------------------------%
+\subsection{Use of GBMs in Finance}
+Geometric Brownian motion is used to model stock prices in the Black–Scholes model and is the most widely used model of stock price behavior.
+Some of the arguments for using GBM to model stock prices are:
+\begin{itemize}
+\item The expected returns of GBM are independent of the value of the process (stock price), which agrees with what we would expect in reality.
+\item A GBM process only assumes positive values, just like real stock prices.
+\item A GBM process shows the same kind of 'roughness' in its paths as we see in real stock prices.
+\item Calculations with GBM processes are relatively easy.
+\end{itemize}
+
+However, GBM is not a completely realistic model, in particular it falls short of reality in the following points:
+
+\begin{itemize}
+\item In real stock prices, volatility changes over time (possibly stochastically), but in GBM, volatility is assumed constant.
+\item In real stock prices, returns are usually not normally distributed (real stock returns have higher kurtosis ('fatter tails'), which means there is a higher chance of large price changes. In addition, returns have negative skewness).
+\end{itemize}
+%--------------------------------------------------------------------------------------------------------%
+%--------------------------------------------------------------------------------------------------------%
+
+
+\subsection{Stochastic Differential Equation}
+A stochastic differential equation (SDE) is a differential equation in which one or more of the terms is a stochastic process, resulting in a solution which is itself a stochastic process. SDEs are used to model diverse phenomena such as fluctuating stock prices or physical systems subject to thermal fluctuations. Typically, SDEs incorporate random white noise which can be thought of as the derivative of Brownian motion (or the Wiener process); however, it should be mentioned that other types of random fluctuations are possible, such as jump processes.
+%--------------------------------------------------------------------------------------------------------%
+%--------------------------------------------------------------------------------------------------------%
+
+\subsection{SDEs in Finance}
+
+In finance, SDE’s are used to characterize the statistical properties of quantities whose time evolution is uncertain, such as interest rates, asset prices in the stock market, or even the volatility of an asset. The uncertainty is modeled as noise in the differential equation that describes the time evolution of the quantity of interest; specifically, an additive term is included that is proportional to the value of a Wiener process.
+
+
+\subsection{Numerical Solutions}
+Numerical solution of stochastic differential equations and especially stochastic partial differential equations is a young field relatively speaking. Almost all algorithms that are used for the solution of ordinary differential equations will work very poorly for SDEs, having very poor numerical convergence. A textbook describing many different algorithms is \textit{Kloeden \& Platen} (1995).
+
+Methods include the Euler–Maruyama method, Milstein method and Runge–Kutta method (SDE).
+
+\end{document}

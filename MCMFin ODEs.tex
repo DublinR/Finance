@@ -1,0 +1,53 @@
+\documentclass[]{article}
+
+\begin{document}
+
+\section{Ordinary Differential Equations}
+%-----------------------------------------------------------------------------------%
+%-----------------------------------------------------------------------------------%
+
+\subsection{Euler integration method}
+The Euler method is a first-order numerical procedure for solving ordinary differential equations (ODEs) with a given initial value. It is the most basic explicit method for numerical integration of ordinary differential equations and is the simplest Runge–Kutta method. 
+%5.7 
+\subsubsection*{Question}
+Consider the following ODE
+\[ \frac{df(t)}{dt}=tf(t),\]
+with $f(t_0)=f_0$, and suppose you use Euler integration with time step $\Delta  T$, so that $t_n=t_0+n\Delta  T$. 
+What is the value of the approximation at time $t_n$?
+
+\begin{itemize}
+
+\item[(a)] $f(t_n) \approx f_0 \prod^n_{k=1}(1+t_k\Delta  T)$
+
+\item[(b)] $f(t_n) \approx f_0 \prod^{n−1}_{k=0}(1+t_k\Delta  T)$
+
+\item[(c)] $f(t_n) \approx f_0+f_0\sum^{n−1}_{k=0}t_k\Delta  T$
+
+\item[(d)] $f(t_n) \approx f_0+f_0\sum^n_{k=1}t_k \Delta  T$
+\end{itemize}
+%-----------------------------------------------------------------------------------%
+%-----------------------------------------------------------------------------------%
+
+\subsection{Reversion to the Mean}
+% 5.8
+Consider the following ODE for $\sigma(t)$,
+\[  \frac{d\sigma(t)}{dt}= - 0.5(\sigma-0.20)\]
+
+with $\sigma(0)=0.30$. How will $\sigma(t)$ evolve with time?
+
+\begin{itemize}
+
+\item[(a)] It will increase.
+
+
+\item[(b)] It will oscillate around the value 0.30.
+
+
+\item[(c)] It will decrease, reaching the value 0.20 in a finite time.
+
+
+\item[(d)] It will decrease, approaching the value 0.20, but never reaching it.(correct)
+\end{itemize}
+
+
+\end{document}
