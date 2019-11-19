@@ -1,0 +1,224 @@
+
+3.B.4 Default and Credit Migration
+
+
+
+3.B.4 Default and Credit Migration
+
+3.B.4.1. Default Probabilities and Term Structures of Default Rates
+
+3.B.4.2 Credit Ratings
+
+3.B.4.2.1  Measuring rating accuracy
+
+3.B.4.3 Agency Ratings
+
+3.B.4.3.2 Transition Matrices, Default probabilities and Credit Migration
+
+3.B.4.4 Credit Scoring and Internal Rating models
+
+3.B.4.4.1 Credit Scoring
+
+3.B.4.4.2 Estimation of the Probability of Default
+
+3.B.4.4.1 Other methods to determine the Probability of Default.
+
+3.B.4.5 Market Implied Default Probabilities
+
+3.B.4.5.1 Pricing the Calibration Security
+
+3.B.4.5.2 Calculating implied default probabilities
+
+ 
+
+3.B.4.1. Default Probabilities and Term Structures of Default Rates
+
+Default probability p1
+
+Survival probability  1-p1
+
+Odds of Default H1={p1}{1-p1}
+
+
+
+--------------------------------------------------------------------------------
+
+
+default probability per unit time(T)
+
+This is also known as the default rate or default intensity or default hazard rate.
+
+It is the “instantaneous” probability of default in a continuous time setting.
+
+
+Survival Probability P(0,T) = exp {-\int (t) dt }
+
+The probability of a default between times 0 and T is 1-P(0,T).
+
+
+
+
+
+
+
+
+3.B.4.2 Credit Ratings
+
+3.B.4.2.1  Measuring rating accuracy
+
+ 
+
+
+ 
+
+An accuracy ratio of close to one means that the model is almost as good as the "ideal" model, while an accuracy ratio of 0 means that it is as bad as a purely random classification.
+
+
+ 
+
+
+
+--------------------------------------------------------------------------------
+
+
+3.B.4.3 Agency Ratings
+
+Examples of statistical models are KMV’s Expected Default Frequencies
+
+and Kamakura’s default probability estimates.
+
+
+3.B.4.3.2 Transition Matrices, Default probabilities and Credit Migration
+
+Calculation of Transition Probabilities
+•
+Time invariance
+
+•
+Markov Property
+
+
+
+
+ 
+
+3.B.4.4 Credit Scoring and Internal Rating models
+
+Variables
+•
+Balance sheet data capturing the indebtedness of the obligor.
+
+•
+Profits and free cash flows capturing the ability to pay.
+
+•
+The riskiness (volatility) of the business
+
+•
+
+
+
+3.B.4.4.1 Credit Scoring
+
+One of the earliest published credit scoring model goes back to Altman (1968), and was further developed in Altman et all (1977).
+
+Credit Scoring models usually rely on accounting ratios.
+
+ 
+
+3.B.4.4.2 Estimation of the Probability of Default
+
+The two most common models for estimation of default probabilities are logit and probit models.
+
+ 
+
+3.B.4.4.3 Other methods to determine the Probability of Default.
+
+The KMV model can be viewed as a scoring model where the accounting ratio is the distance to default.
+
+This contains "market information" and "volatility information", which are not usually found in classical accouting ratios.
+
+
+Neural Networks and Expert Systems
+
+These systems have been found to be as effective as established statistical models such as logit and probit methods.
+
+Adoption has been hindered by the fact that they are considered "black box" approaches.
+
+
+ 
+
+3.B.4.5 Market Implied Default Probabilities
+
+The credit default tree is a perfectly adequate model for pricing simple credit sensitive instruments such as corporate bonds or CDSs, provided that the necessary conditional default probabilities are already specified.
+
+Instead of determining prices for given set of parameters, we know determined parameters for a given set of prices of a set of benchmark securities, the calibration securities.
+
+The default probabilities reached in this calibration exercise are known as market-implied default probabilities.
+
+
+3.B.4.5.1 Pricing the Calibration Security
+
+ 
+
+ 
+
+E(0,T)
+
+ 
+
+The value of defaultable coupon bond with coupon payments Tk  k=1,......K, coupon amount c and recovery rate R can be written as
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+3.B.4.5.2 Calculating implied default probabilities
+
+ 
+
+3.B.4.6 Credit Rating and Credit Spreads
+
+3.B.4.7 Summary 
+
+ 
+
+
+
+\section{Accuracy Ratio} % PRMIA 3.B.4.2
+%-------------------------------------------------------------%
+This is the area ration between CAP of the credit rsk model under construction and the random models CAP (the diagonal), with the area
+between perfect prediction models CAP (crystal ball) and the diagonal.
+
+Here the x-axis is now also a percentage scale.
+
+The Area between the ideal model and random model is easily found to be $1-D/2$, where D is the fraction of default obligators.
+
+Thus the accuracy of any given model with CAP function $CAP(x)$
+
+\[ AR = \int^{1}_{0} \frac{CAP(x)dx - 1/2}{1/2(1-D)}\]
+
+\begin{itemize}
+\item $AR \approx 0$ very bad
+\item $AR \approx 1$ ideal model
+\end{itemize}
+
+%-------------------------------------------------------------%
+
+Negative Accuracy is also possible - model even worse than purely random credit ranking and the model ranking shoule be inverted.
+

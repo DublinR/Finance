@@ -1,0 +1,342 @@
+
+PRMIA 1.A.1 Risk and Risk Aversion
+
+
+
+1) Introduction
+
+2) Expectation
+
+3) Axioms of Independence of Choice
+
+4) Maximising expected utilities
+
+5) Encoding a Utility Function
+
+6) The mean variance criterion
+
+7) Risk Adjusted Performance Measures 
+
+8) Summary
+
+Appendix 1: Terminology
+
+Appendix 2: Utility Functions
+
+
+
+PRMIA 1.A.1 Risk and Risk Aversion
+
+Risk and Risk Aversion: Learning Outcome Statement
+
+1.A.1.4 The Utility Function
+
+Section 6.2 Estimating Risk Tolerance
+
+The Sharpe Ratio
+
+Jensen's Alpha
+
+1.A.1.7    Kappa Indices
+
+Appendix : Utility Functions
+
+
+
+Risk and Risk Aversion: Learning Outcome Statement
+•
+The candidate should be able to:
+
+•
+  Explain the concepts of Utility and Utility Maximization
+
+•
+  Explain the ways of the determination of utility function
+
+•
+  Explain the concept of Risk Aversion
+
+•
+  Discuss the Mean-Variance Criterion
+
+•
+  Define the Sharpe, Treynor and Information Ratios
+
+•
+  Define Jenson’s Alpha, RAROC, RoVaR and RAPM
+
+•
+  Define the Sortino, Omega Index and Kappa Ratios
+
+
+
+ 
+
+1.A.1.3
+
+ 
+
+Four basic axioms
+
+
+1) Transitivity of Choice
+
+2) Continuity of Choice
+
+3) Independence of Choice
+
+4) Stochastic Dominance
+
+
+1.A.1.4 The Utility Function
+
+
+
+u(x)
+
+
+Risk Aversion and Risk Tolerance
+
+
+Certain Equivalence
+
+
+
+--------------------------------------------------------------------------------
+Encoding a Utility Function
+
+for a certian individual
+
+
+
+Realistic, meaningful, clear and simple
+
+
+Ironing out Anomalies
+
+
+The Mean Variance Criterion
+
+
+Section 6.2 Estimating Risk Tolerance
+
+
+Risk Adjusted Performance Measures (RAPM)
+
+
+
+--------------------------------------------------------------------------------
+The Sharpe Ratio
+
+
+There is a risk free asset returning the risk free rate r.
+
+
+
+SR =- r
+
+
+ represents the expected return of the portfolio
+
+ is the standard deviation of the risk free return.
+
+
+
+Jensen's Alpha
+
+Application of the Treynor Ratio
+
+Application of Jensen's Alpha
+
+Generalizing Sharpe's Ratio
+
+The Adjusted Sharpe Ratio
+
+Downside RAPMs
+
+RAROC
+
+Sortino Ratio
+
+Kappa Index
+
+Omega Index
+
+The Omega Statistic is the ratio of expected returns above the threshold to the the expected return under the threshold.
+
+
+(t) =E[max(R-),0]E[max(-R),0]
+
+Kappa indices have the following properties
+
+    1) They decrease monotonically with the choice of threshold . 
+
+    2) 
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+Portfolio P
+ 
+
+Market M
+ 
+
+
+
+Average Return
+ 
+
+35%
+ 
+
+28%
+ 
+
+
+
+Beta
+ 
+
+1.2
+ 
+
+1
+ 
+
+
+
+Std. DEv
+ 
+
+42%
+ 
+
+30%
+ 
+
+
+
+Non Systemic Risk
+ 
+
+18%
+ 
+
+0%
+ 
+
+
+Risk-free interest rate 6%
+
+
+1) Sharpe ratios
+
+
+SRp=35-60.42= 0.69            SRm=28-60.30= 0.733
+
+
+2) Jensen's Alpha        = 35 -[6+1.2(28-8)] = 2.6
+
+
+3) Treynor Ratio
+
+
+TRp=35-61.2= 24.2            TRm=28-61= 22
+
+
+
+--------------------------------------------------------------------------------
+
+
+Jensen's measure calculates the average return of a portfolio [Rp] over that calculated by the CAPM.
+
+
+p=Rp-[Rf+[Rm-Rf]]
+
+
+Rp=24%    Rf=6%    = 2.1    Rm= 14%
+
+p= 24 - [6+ 1.2[14 -6]] =1.8
+
+
+
+
+--------------------------------------------------------------------------------
+1.A.1.7    Kappa Indices
+
+
+Semivariance of a risky asset is defined by the expected value of the squared deviation of returns below the expected returns.
+
+ 
+
+The lower partial moment (LPM) order n (n>0) of a random return R ( given the threshold  ) is defined as
+
+ 
+
+ 
+
+
+The Sortino Index is the second order index.
+
+
+
+--------------------------------------------------------------------------------
+ 
+
+ 
+
+Appendix : Utility Functions
+
+
+
+
+
+\section{Encoding a Utility Function}
+
+\begin{itemize}
+\item For an individual
+\item For a firm
+\item Ironing out anomalies
+\end{itemize}
+
+%====================================================%
+
+\begin{itemize}
+\item Drawing a utility function over various states of wealth for an entity
+
+\item Risk Attitude can be inferred from a series of a decisions.
+\item Problems submitted for decision are
+\begin{itemize}
+\item[i] Realistic
+\item[ii] Meaningful
+\item[iii] Clear and Simple
+\end{itemize}
+\item Define a monetary range of interest. This range should cover the personal impact of all decisions that person would make
+\item Without loss of generality assign a utility score to possible outcomes
+\end{itemize}
+
+%=================================%
+\subsection{For the firm}
+\begin{itemize}
+\item Encoding a utility function for a firm presents a much greater challenge.
+\begin{itemize}
+\item[$\bullet$] Should thre be a single risk attitude for all decisions in the firm?
+\item[$\bullet$] Whose risk attitude should be encoded?
+\end{itemize}
+\item  Firm's risk attitude to strategic decisions should be taken at board level. Then the risk policy should delegate downwards.
+\end{itemize}
+

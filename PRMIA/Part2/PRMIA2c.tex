@@ -1,0 +1,42 @@
+\documentclass[]{article}
+
+%-------------------------------------------------------------------------%
+\begin{document}
+
+\section{PRMIA Section 2C}
+
+\subsection{Partial Differentiation (Black Scholes)}
+
+\[  \frac{\partial W}{\partial t} +  rs\frac{\partial W}{\partial s} +  \frac{\sigma^2}{2}  \frac{\partial^2 W}{\partial s^2} = rW   \]
+
+%---------------------------------------%
+\begin{description}
+\item[W] Value of a derivative security
+\item[s] value of an underlying security
+\item[$\sigma$] Volatility 
+\item[r] Risk free rate of return
+\end{description}
+%---------------------------------------%
+
+\subsection{Example (Page 84)}
+
+Suppose $w$ is a function of three variabkes
+\[w = x^4 + xz^3 + xy -4y^3 \]
+
+\textbf{Solutions}
+\[ \frac{\partial w}{\partial x} = 4x^3 + z^3 +y \]
+\[ \frac{\partial w}{\partial y} = x-12y^2\]
+\[ \frac{\partial w}{\partial z} = 3xz^2 \]
+
+\subsection{Hessian}
+
+\[ \left( \begin{array}{ccc}
+ \frac{\partial^2 w}{\partial x^2} & \frac{\partial^2 w}{\partial x \partial y} & \frac{\partial^2 w}{\partial x \partial z} \\ 
+\frac{\partial^2 w}{\partial x \partial y} & \frac{\partial^2 w}{\partial y^2} & \frac{\partial^2 w}{\partial y \partial z}  \\ 
+\frac{\partial^2 w}{\partial x \partial z} & \frac{\partial^2 w}{\partial y \partial z} & \frac{\partial^2 w}{\partial z^2}
+\end{array} \right)\]
+
+\subsection{Vega}
+Vega is the the rate of change of an option value wrt to the volatility of the underlying.
+
+\end{document}

@@ -1,0 +1,20 @@
+PRMIA 3.C.3.4
+
+example 3.c.3.2 Credit Card Operational Risk
+
+Question
+50,000 Credit Cards will be in issuance over the forthcoming year.
+The expected Probability of an incidence of Credit Card Fraud is 0.05.
+
+If every frauds gives rise to an operational loss of $1000
+
+a) Calculate the Expected Loss
+b) The ORC at the 99.9% percentile, with and without the assumption that the expected loss
+is already covered by the normal cost of business.
+
+Solution
+
+Expected Loss lambda = 2500
+Loss - NPLx = 50000 x 0.05 x 1000 = 2.5 million
+
+ORC = gamma expected annual loss

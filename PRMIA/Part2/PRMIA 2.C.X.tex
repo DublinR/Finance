@@ -1,0 +1,170 @@
+% Section 2.C
+
+PRMIA 2
+
+Section 2.C Calculus
+
+\begin{description}
+\item[2.C.1] Differential Calculus
+\item[2.C.2] Case Study - Modified Duration of a Bond
+\item[2.C.3] Higher-Order Derivatives
+\item[2.C.4] Financial Applications of a "nd Derivative
+\item[2.C.5] Partial / Total differentiation
+\item[2.C.6] Integral Calculus
+\item[2.C.7] Optimisation
+\end{description}
+
+Section 2.D Linear Algebra
+\begin{description}
+\item[2.D.1] Matrix Alagebra
+\item[2.D.2] Application to portfolio construction
+\item[2.D.3] Quadratic form
+\item[2.D.4] cholesky Decomposition
+\item[2.D.5] Eigen value /  Eigen vectors
+\end{description}
+
+
+
+\begin{itemize}
+\item[2.C.2] Modified Duration of a Bond
+\item[2.C.4] Financial Applications of Second Derivatives 
+\begin{itemize}
+\item convexity, Convexity in aciton, the delta and gamma of an option
+\end{itemize}
+\end{itemize}
+%================================================%
+
+\subsection*{Present Value of a bond}
+
+\[ PV = \frac{CF_1}{1+y} + \frac{CF_2}{(1+y)^2} + \frac{CF_3}{(1+y)^3} + \ldots \frac{CF_n}{(1+y)^n} \]
+
+\subsection*{First Derivative w.r.t Yield}
+
+\[ \frac{}{} =  \sum^n_{i=1} \left[ \frac{-i CF_i}{(1+y)^{i+1}}\right] \]
+
+%================================================%
+
+Example 2.C.8 Modified Duration
+
+Consider a 3 year bond paying annual coupons of 4 and trading on a yield to maturity of 5\%.
+
+The dirty bond price is given as
+
+\[ PV =  \frac{4}{1.05} +  \frac{4}{1.05^2} + \frac{104}{1.05^3} = 97.2768 \]
+
+The Modified Duration is therefore
+
+\[ MD = \frac{}{} \left( \frac{\frac{4}{1.05}}{97.2768} + \frac{2\frac{4}{1.05^2}}{97.2768} +\frac{3\frac{4}{1.05^3}}{97.2768} \right) \]
+
+= -2.7470
+
+%==============================================%
+
+Financial Analysts use the Modified Duration through the following Relationship
+
+\begin{itemize}
+\item \% Price Change for a basis point change in yield = \% \Del \P_b = MD \times 0.0001\]
+\end{itemize}
+
+% DEL  - Pyramid Symbol
+
+%===========================================================%
+%-----------------------------------------------------------------------------------------%
+
+PRMIA 2C4
+
+Delta and Gamma of an Option
+
+The value of an option is a function of the price of the underlying asset (in addition to other factors).
+
+The first derivative of the option value w.r.t. price is called the \textbf{delta}.
+
+The second derivative of the option value w.r.t. price is called the \textbf{gamma}.
+
+If W(s) is the value of a european call regarded as a function of $s$, the price of the underlying asset.
+
+$\delta S$ small change in that price
+
+\[ W(s + \delta S) \approx W(s) + delta \delta S + frac{1}{2}gamma \delta^2 S\]
+
+%-----------------------------------------------------------------------------------------%
+
+PRMIA 2C5
+
+Differentiating Functions of Several Variables
+
+Partial Differentiation
+
+\[ \frac{\partial f}{\partial x} \frac{\partial f}{\partial y} \]
+
+\textbf{Example}
+
+\[ f(x,y) = x^2 +6xy +2y^3 \]
+
+\begin{itemize}
+\item w.r.t $x$
+\[\frac{\partial f}{\partial x} = 2x +6y\]
+\item w.r.t $x$
+\[\frac{\partial f}{\partial y} = 6x +6y\]
+\end{itemize}
+
+Equations that use Partial differentials are known as P.D.Es.
+
+Hessian Matrix
+matrix of second partial derivatives with respect to each variable
+
+
+%=========================================%
+\subsection{Bond Convexity}
+This is defined to be half of the second derivative of the bond price, divided by the bond price.
+Convexity is measured is ``years squared".
+\[ \mbox{Convexity} = \frac{\frac{d^2PV}{dy^2} }{2PV} \]
+
+From Earlier example
+
+The second derivative w.r.t yield is
+
+\[ PV = \frac{4}{1.05^1} + \frac{4}{1.05^2} + \frac{104}{1.05^3}\]
+
+\[ \frac{dPV}{dy} = \frac{-4}{1.05^2} + \frac{-2\times 4}{1.05^3} + \frac{-3\times 104}{1.05^4}\]
+
+\[ \frac{d^2PV}{dy^2} = \frac{2 \times 4}{1.05^3} + \frac{ 6 \times 4}{1.05^4} + \frac{12\times 104}{1.05^5}\]
+
+\[ \frac{d^2PV}{dy^2} = 1004.4962\]
+
+with $PV = 97.277$ 
+\[ \mbox{Convexity} = \frac{\frac{d^2PV}{dy^2} }{2PV} = \frac{1004.4962 }{2 \times 97.277 } = 5.163 \]
+
+
+
+%=====================================================================%
+
+Find the region under the curve between the given boundaries.
+\LARGE
+\[ \int^4_0 \sqrt{x} dx = \int^4_0 (x)^{0.5} dx \]
+
+\[  \bigg \left[ \frac{(x)^{1.5}}{1.5} \right]^4_0 = \frac{2}{3} \left[ (x)^{1.5} \right]^4_0 \]
+
+
+Answer = 16/3
+
+%=====================================================================%
+
+\[ \int (3x+1)^{20} dx  \]
+
+\begin{itemize}
+\item u = 3x+1
+\item du/dx = 3
+\end{itemize}
+
+\[ \frac{1}{3} du = dx \]
+
+
+
+\[ \int (3x+1)^{20} dx  = \int (u)^{20} \frac{1}{3} du  \]
+
+answer
+
+\[ \frac{(u)^{20}}{63} + c \]
+
+%=====================================================================%

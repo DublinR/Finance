@@ -1,0 +1,32 @@
+
+% PRMIA 3.C.3.4
+Credit Card Operational Risk
+
+\subsection{Question}
+
+\begin{itemize}
+50,000 Credit Cars will  be in issuance during the forthcoming year and the expected probability of a credit card fraud on any card is 0.05.
+
+If every fraud gives rise to an operational loss of $\$1,000$;
+
+\item[(a)] Calculate the expected Loss
+
+\item[(b)]
+
+\end{itemize}
+
+%--------------------------------------------%
+
+\subsubsection{Solutions}
+
+\begin{itemize}
+
+\item Expected Loss \lambda = 2,500
+
+\end{itemize}
+
+$---------------------------------------------%
+
+\
+
+\[\mbox{ORC} = \mbox{gamma} \times \mbox{Expected Annual Loss}\]

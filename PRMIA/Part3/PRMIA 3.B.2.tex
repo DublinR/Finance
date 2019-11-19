@@ -1,0 +1,204 @@
+
+PRMIA 3.B.2 Foundations of Credit Risk Modelling
+
+
+The three basic components of a credit loss are as follows: the exposure, the default probability and loss given default. 
+
+The product of these three, which can be defined as random processes, is the credit loss distribution.
+
+
+Learning Outcome Statement
+
+The candidate should be able to:
+•
+  Define Default Risk
+
+•
+  Define Exposure, Default and Recovery Processes
+
+•
+  Explain the Credit Loss Distribution
+
+•
+  Explain Expected and Unexpected Loss
+
+•
+  Describe Recovery Rates
+
+•
+  Discuss use of beta distribution in credit risk modeling
+
+
+
+--------------------------------------------------------------------------------
+III.B.2.1. Introduction
+
+III.B.2.2 What is Default Risk
+
+Default risk is the risk that a counterparty does not honour his obligations. Such an obligation may be a payment obligation, but it is also a default if a supplier does not the parts he promised to deliver, or if a contractor does not render the services he promised.
+
+ 
+
+Default :  An obligation is not honoured
+
+ 
+
+Payment default :  An obligor does not make a payment when it is due.
+
+ 
+
+Repudiation : Refusal to accept a claim as valid
+
+Moratorium : Declaration to stop all payments for some period of time. Usually only sovereigns can afford to do this.
+
+Credit default :  Payment defualt on borrowed money (loans and bonds)
+
+ 
+
+Insolvency : Inability to pay (even if only temporary)
+
+ 
+
+Bankruptcy: The start of a formal legal procedure to ensure fair treatment of all creditors of a defaulted obligor. 
+
+
+--------------------------------------------------------------------------------
+III.B.2.3 Exposure Default and Recovery Processes
+
+ 
+
+The default indicator process
+
+The exposure process
+
+Loss given defualt of obligor i
+
+ 
+
+We consider a set of I obligor indexed with  and we call i the time of the default of the ith obligor.
+
+ 
+
+Ni(t)   The default indicator process
+
+
+
+--------------------------------------------------------------------------------
+III.B.2.4 The Credit Loss Distribution
+
+The portfolio loss D(T) at time T is the sum of the individual default losses.
+
+    D(T) =Di(T)
+
+ 
+
+The portfolio's credit loss distribution is the probability distribution of this random variable.
+
+ 
+
+a) Assuming independence between individual default losses almost always leads to a gross underestimation of the portfolio's credit risk.
+
+b) The default correlation parameters typically have a strong influence on the tail of the loss distribution - and thus on the value at risk.
+
+ 
+
+ 
+
+
+--------------------------------------------------------------------------------
+
+
+ 
+
+III.B.2.5 Expected and Unexpected Loss 
+
+The expected loss on a portfolio is the sum of the expected losses of the individual obligor:
+
+E[D(T)] = E[Di(T)]
+
+The Unexpected Loss is usually defined with respect to a VaR quantile and the probability distribution of the portfolio’s loss. 
+
+P[D(T) D99%] =99%
+
+
+Unexpected Losses
+
+The unexpected loss of a portfolio at a VaR quantile of 99% is defined as the difference between the 99% quantile level and the  expected loss of a portfolio.
+
+UEL = D99%-E[D(T)]
+
+
+Capital Allocation Procedures
+
+1) Fix a VaR quantile for credit losses (usually 99% or 99.9%)
+
+2) Determine the portfolio’s expected loss.
+
+3) Determine the portfolio’s unexpected loss (UEL).
+
+4) Allocate risk capital to the portfolio to the amount of the unexpected loss.
+
+5) Split up the portfolio’s risk capital over the individual components of the portfolio according to their risk capital contributions.
+
+
+III.B.2.6 Recovery rates
+•
+Market value recovery
+
+•
+Settlement value recovery
+
+•
+The Beta Distribution
+
+
+Random recovery rates
+
+ 
+
+The Beta Distribution    f(x)=cxa(1-x)b
+
+ 
+
+a and b parameters
+
+c normalizing constant.
+
+ 
+
+ 
+
+
+3.B.2.6.
+
+Market Valve Recovery the Recovery rate is the market valve per init of legal claim amount of default debt at some short time (1-3 months) after default.
+
+This generally applies to larger obligors, for example, obligors rated by public agencies
+
+For smaller obligors, there will be no market price for distressed debt. Hence the second type of recovery rate.
+
+Settlement Value recovery.
+
+This is the recovery rate where the valve of the default settlement per Unit of legal claim, discounted back to the date of default and after subtracting legal and administrative costs.
+
+ 
+
+We expect the following factors to directly influence the recovery rates of default debt.
+
+•
+·         Collateral
+
+•
+·         Legislation regarding bankruptcy.
+
+•
+·         legal priority of claim
+
+
+
+ 
+
+
+--------------------------------------------------------------------------------
+III.B.2.7 Conclusion
+

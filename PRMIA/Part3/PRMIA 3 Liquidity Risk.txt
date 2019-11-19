@@ -1,0 +1,31 @@
+\section{Liquidity Risk Management}
+
+\textbf{Learning Outcome Statement} \\
+The candidate should be able to:
+
+\begin{itemize}
+\item Describe the factors which determine liquidity risks, and their pricing
+considerations
+\item  Identify the processes concerning collateral management
+n Discuss the implications of managing liquidity across business lines, legal
+entities, and currencies
+\item  List the elements of funding diversification and market access
+\item  Contrast the choices for intra-day management of liquidity
+\item  Identify and differentiate the early warning signs of compromised liquidity
+\item  Describe the components required for the disclosure of liquidity risk
+\item  Identify, and design, the requirements of Stress Testing and a liquidity buffer
+\item  Characterize the basic elements of financial contracts, their corresponding
+liquidity, and the relevance of time
+\item  Describe the essential components of market, and funding, liquidity risk
+\item  Discuss the impacts of counterparty / credit risk on liquidity relative to
+speads, defaults, credit enhancements, and asset based enhancements
+\item  Describe the impact of behaviour on liquidity with respect to drawings, repay
+ments, prepayments and draw-downs
+\item  Derive the impact of insurance risk on liquidity
+\item  Demonstrate the purpose, and effect of liquidity gap reports, and Liquidity at
+Risk (LAR)
+\item  Describe the components of the contents used for internal and external
+liquidity reporting
+\end{itemize}
+
+%------------------------------------------------------------------------------------------%

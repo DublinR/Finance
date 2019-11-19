@@ -1,0 +1,9 @@
+PRMIA 1A1
+Explain the concept of utility and utility maximization
+
+Utility: Personal value of an asset
+Price:  Exchange value of an asset
+
+Actions should be directed at maximising expected utility
+
+Assumption: Utility is always inversely proportional to exisitng wealth

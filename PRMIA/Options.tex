@@ -1,0 +1,148 @@
+%-----------------------------------------------%
+
+Interest Rate Risk
+The Greeks
+Implied Volatility
+Theta Time Decay
+Volatility Smile
+Delta Hedging
+VaR
+Value At Risk
+time Horizon
+Holding Period
+European Option
+%-----------------------------------------------%
+http://web.archive.org/web/20060319081558/http://www.lifelong-learners.com/opt/SYL/s5node5.php
+%----------------------------------------------%
+A Forward contract is the simplest form of a contingent claim that can be derived from an asset, since it does not contain any element of choice. Two parties agree, on a future delivery date $ T$ , to exchange an underlying asset for a predetermined amount of cash called the delivery price $ K$ . The underlying can be any kind of asset (e.g. commodities, shares, currencies) that has a fluctuating spot price $ S(t)$ ; on the delivery date $ T$ , the terminal payoff $ \Lambda (S)$ is simply calculated from the difference between the spot and the delivery price
+
+ $\displaystyle \Lambda_\mathrm{long}=S-K, \qquad\qquad\qquad\qquad \Lambda_\mathrm{short}=K-S.$	 (2.1.2#eq.1)
+
+The value (2.1.2#eq.1, left) plotted in (2.1.2#fig.1, left) shows that a long forward position (where the holder has the right and the obligation to buy the underlying for a price $ K$ ) increases in value and becomes profitable when the underlying exceeds the delivery price; the maximum losses in a long position occur if the underlying loses all of its market value $ S=0$ and the contract obliges the holder to buy for the delivery price  $ \Lambda=-K$ .
+Figure 2.1.2#fig.1: Terminal payoff diagrams  $ \Lambda (S)=V(S,T)$ of forward contracts struck for a delivery at a price $ K$ on a date $ T$ ; the value of a long (left) and a short position (right) is plotted as a function of possible realizations of the underlying spot price $ S$ .
+\includegraphics[width=6cm]{figs/payFutLong.eps}        \includegraphics[width=6cm]{figs/payFutShort.eps}
+The opposite is true for the party who enters a short forward position (right): the holder has both the right and the obligation to sell the underlying with a maximum profit of  $ \Lambda=+K$ and potential losses that are unlimited if the underlying becomes arbitrarily expensive $ S\gg K$ . To avoid the unnecessary exchange of cash on the day $ t_0<T$ when the contract is written, the delivery price is sometimes chosen equal to the forward price $ F(t_0,T)$ , which, by definition, makes the initial value of the contract worthless  $ K=F(t_0,T)=S(t_0)$ .
+
+A futures contract is a special type of forward contract with standardized delivery dates and sizes that allow trading on an exchange: (2.1.2#tab.1) shows an example of a commodity future that enables the owner of a contract to buy one tone of wheat some time in the future. A system of margin requirements is designed to protect both parties against default: instead of realizing the profit or the loss at the expiry date, futures are evaluated every day and margin payments are made across gradually over the lifetime of the contract. 
+
+Table 2.1.2#tab.1: Futures of wheat (GBP/tone) quoted on Oct 22, 2002 in the press
+Delivery	 Settlement		 Volume	 Open interest
+date	 price	 High	 Low		
+Nov	 59.90	 60.75	 59.90	 160	 950
+Jan	 62.25	 62.25	 62.25	 50	 1550
+Mar	 64.10	 64.75	 64.10	 20	 900
+May	 65.75	 66.55	 65.75	 140	 3410
+
+Despite these differences, futures prices can be shown to be equal to the forward prices if both parties can be trusted and the interest rate is fixed.
+
+%----------------------------------------------%
+
+%Plain Vanilla Options
+
+To avoid margin payments every day and allow investors who are not members of a clearing house to use derivatives, financial institutions created a new type of security they called options. As the name suggests, an option confers the right and no obligation for the holder (the buyer) to exchange an underlying asset (e.g. a share) for a fixed price some time in the future. Of course, the writer (the seller) enters an obligation towards the holder, but the writer is generally a large financial institution who is also a member of a clearing house.
+
+In their most basic form (or ``flavor''), financial derivatives are commonly called vanilla:33a plain vanilla call (alternatively put) option confers its holder the right to buy (alt. sell) the underlying for a fixed amount of cash $ K$ called exercise or strike price. Depending on whether the market value of the underlying $ S$ is higher or lower than the strike price $ K$ when the option reaches the expiry date $ T$ , the option holder can choose to either exercise the option and buy (alt. sell) the underlying for a price $ K$ , or let the option expire worthless.
+
+The terminal payoff  $ \Lambda (S)=V(S,T)$ plotted in (2.1.3#fig.1) for all the possible realizations of the underlying spot price $ S$ is similar to the forward contract (2.1.2#fig.1), except that with no obligation, the option expires worthless and can never become negative.
+
+Figure 2.1.3#fig.1: Terminal payoff diagrams  $ \Lambda (S)=V(S,T)$ showing the value of plain vanilla call (left) and put options (right) as a function of possible realizations of the underlying share price $ S$ at the expiry time $ T$ .
+\includegraphics[width=6cm]{figs/payCall.eps}        \includegraphics[width=6cm]{figs/payPut.eps}
+A vanilla call, which carries the right to buy the underlying for a price $ K$ , has a finite value only if the underlying is more expensive on the market; the risk-free profit that can be made by exercising the call option (spending  $ -K$ to buy the underlying and immediately sell it for a higher price $ S$ ) is given by the difference $ S-K$ if this is positive and zero otherwise. Similarly, a put option has a finite value provided that its holder can sell the underlying to the writer for a price $ K$ that is higher than the spot price on the market $ -S$ . Mathematically,
+
+ $\displaystyle \Lambda_\mathrm{call}=\mathrm{max}(S-K,0), \qquad\qquad\qquad\qquad \Lambda_\mathrm{put}=\mathrm{max}(K-S,0).$	 (2.1.3#eq.1)
+
+Because of the fluctuations in the underlying spot price $ S(t)$ , the value of an option $ V(S(t),t)$ before it expires is generally different from the terminal payoff. By definition, the intrinsic value of an option at a time $ t<T$ is defined from the terminal payoff as if the option would expire now with the current price of the underlying $ V(S(t),T)$ . Moreover, call and put options are said to be out-of-the-money if they have no intrinsic value and in-the-money if they have a large intrinsic value. If  $ S\approx K$ , they are at-the-money and that is where their spot price is generally quoted in the press. For example, take one of the two Marconi call options quoted on Feb 23, 2002 by the Financial Times and reproduced in (2.1.3#tab.1). 
+Table 2.1.3#tab.1: Options traded in London and quoted on Feb 23, 2002 in the press
+Option	 Strike	Calls	Puts
+(*stock price)	 -	 May	 Aug	 Nov	 May	 Aug	 Nov
+Hilton	 200	 17.5	 23	 26	 5.5	 9.5	 13.5
+(*215 1/2)	 220	 6.5	 13	 16	 15.5	 20	 24
+AstraZeneca	 3500	 167.5	 267.5	 336	 129	 197	 249
+(*3519)	 3600	 116.5	 216	 284	 179.5	 245.5	 295.5
+Marconi	 15	 4.5	 6	 7	 3.5	 4.5	 5
+(*16 3/4)	 20	 3	 4.5	 5.5	 7	 8	 8.5
+%----------------------------------------------%
+
+An investor who speculates on a solid rebound could buy 100 Marconi shares for GBP 1675; alternatively, he could buy 100 call (options are usually traded in units of 100) for GBP 3 each, giving him the right to buy the shares later in May for a total of GBP 2000. If the stock prices double until May (the precise expiration date is on the Saturday immediately following the third Friday of the expiration month), the net benefit from exercising the options to buy 100 shares for 20 and immediately sell them for 33 1/2 will be GBP 3350-2000=1350, a larger return on investment (1350/300=4.5) than the doubling that would have been achieved by using shares alone. If the price of the share remains below 20, however, the holder of calls with a strike at 20 will however never exercise his rights and will eventually loose all the investment made when buying the options, i.e. GBP 300.
+
+This shows how speculators can use options to achieve larger gains for a higher risk, using an effect called gearing. Just the opposite can be achieved with hedging, where the negative correlation between an asset and its derivatives is exploited in the form of an insurance reducing the investment risk at the expense of for a lower expected return. To show an extreme case of hedging, imagine a portfolio that is long one asset, long one put and short one call with the same strike price $ K$ and expiry time $ T$ . This combination corresponds to what is called the put-call parity relation
+
+ $\displaystyle \Pi(T) = S(T)+\Lambda_\mathrm{put}-\Lambda_\mathrm{call} = S(T) + \mathrm{max}(K-S(T),0) -\mathrm{max}(S(T)-K,0) = K, \hspace{5mm}\forall S$	 (2.1.3#eq.2)
+
+and shows that the risk from the uncertain evolution of a spot price  $ S(t)$ can be eliminated completely in favor of a guaranteed payoff $ K$ . Hedging is particularly important for companies that work with expensive raw materials such as gold: the right combination of options allows them to secure their activity without having to take the financial risk from volatile markets.
+%===============================================================%
+In general, the right combination of assets (e.g. shares) and derivatives (e.g. call or put options) can be used to expose a portfolio to any level and type of risk chosen by the investor and reap the benefit from the payoff that reflects the investor's opinion. The plots in (2.1.3#fig.2) show only at the option expiry how each term (or option series, i.e. options having the same strike price and expiry date) contributes to the put-call parity relation (2.1.3#eq.2) and cancels the investment risk.
+
+Figure 2.1.3#fig.2: Terminal payoff diagrams illustrating the put-call parity relation.
+\includegraphics[width=14cm]{figs/putCallParity.eps}
+
+More complicated payoffs can be obtained by combining vanilla options from the same class (i.e. same type, but different strike price and expiry dates, exercise 2.05-2.07) or even with hybrid underlyings that have only partly correlated prices. For example, combining the right amount of put options on the NASDAQ top 100 index (a symbol called QQQ) with shares from IBM, it is in principle possible to make a profit if IBM shares fall, but less than the rest of the technology market. However, remember that individual investors who are not member of a clearing house are only permitted to write covered options, where every short position such as the call ( $ -\Lambda_\mathrm{call}$ ) in the put-call parity relation has to appear in a combination with a long position in the underlying ($ +S$ ).
+
+Finally, note that different exercise styles do affect the price of an option $ V(S,t)$ before it expires $ t<T$ : in chapter 4, we will first study the European style where the options can be exercised only on the expiry date and later in chapter 6, we will extend the models to deal with the American style where the options can be exercised anytime up to the expiry date.
+
+
+%-----------------------------------------------
+
+\frametitle{Binary or digital options}
+
+may be the simplest form of exotic contracts: they only differ from the vanilla options by the terminal payoff L(S)   that can be any positive function of the asset price S. Some binaries can be obtained from the superposition of vanilla options: straddles, bullish / bearish vertical spreads and butterfly spreads are the subject of exercises 2.05-2.07. Others have payoffs that remind well known functions, such as the cash-or-nothing call reproducing the Heavyside H(x)
+ $\displaystyle \Lambda_\mathrm{cash-or-nothing} =b \mathcal{H}(S-K)$	 (2.1.4#eq.1)
+
+
+and the supershare reminding the Dirac delta function
+ $\displaystyle \Lambda_\mathrm{supershare} =\frac{1}{d}[\mathcal{H}(S-K) -\mathcal{H}(S-K-d)]$	 (2.1.4#eq.2)
+
+
+with terminal payoff diagrams illustrated in (2.1.4#fig.1).
+Figure 2.1.4#fig.1: Example of binary / digital options with a general terminal payoff  $ \Lambda (S)$ : a cash-or-nothing call (left) and a super-share (right).
+\includegraphics[width=6cm]{figs/payCashNothing.eps}        \includegraphics[width=6cm]{figs/paySupershare.eps}
+
+This generalization does not present any formal difficulty, but the discontinuities in terminal payoff L(S)   do however seriously stretch the non-arbitrage arguments that will be used to derive the Black-Scholes equation in chapter 3. Indeed, a large amount of cash would be required to hedge small changes in the price of the underlying as the option jumps from zero to a finite value, only to fall back to zero shortly afterwards.
+
+%---------------------------------------------
+
+\frametitle{Barrier options}
+
+are characterized by a a condition set on the existence of the option. When triggered, the right to exercise the option either appears (in) or disappears (out) if the asset price is above (up) or below (down) a prescribed barrier B:
+\begin{itemize}
+\item up-and-in options come into existence if $S > B$ before expiry,  
+\item up-and-out options cease to exist if $S > B$ before expiry,  
+\item down-and-in options come into existence if $S < B$ before expiry,  
+\item down-and-out options cease to exist if $S < B$ before expiry.  
+\end{itemize}
+Barrier options can be further complicated by making the knockout boundary a function of time $B(t)$ or by having a rebate if the barrier is activated. In the latter case, the holder of the option receives a specified amount if the barrier is reached.
+%-----------------------------------------------
+\section{Asian options}
+have a payoff that depends on the price history of t
+
+
+or geometric average
+ $\displaystyle \bar{S}=\exp\left[\frac{1}{\Delta t}\int_{t-\Delta t}^{t} \log S(\tau)d\tau \right]\hspace{1cm} \bar{S}=\left[\prod_{j=1}^N S(t_j)\right]^{1/N}$	 (2.1.4#eq.6)
+
+
+to define the strike price on the expiry date T. An average strike call, for example, is structurally similar to a vanilla call, with a payoff equal to the difference between the asset price at expiry and its average if the difference is positive and zero otherwise
+ $\displaystyle \Lambda_\mathrm{average-strike-call}=\mathrm{max}(S-\bar{S},0).$	 (2.1.4#eq.7)
+
+
+Such a product can be used to average out the price of an underlying without the need for continuous re-hedging.
+
+%==============================================================================================%
+
+
+
+%-----------------------------------------------
+\begin{frame}
+\frametitle{Asian options}
+
+'Bullet Bond'
+A debt instrument whose entire face value is paid at once on the maturity date. Bullet bonds are non-callable. Bullet bonds cannot be redeemed early by an issuer, so they pay a relatively low rate of interest because of the issuer's exposure to interest-rate risk. Both corporations and governments issue bullet bonds, and bullet bonds come in a variety of maturities, from short- to long-term. A portfolio made up of bullet bonds is called a bullet portfolio. 
+\end{frame}
+%-----------------------------------------------
+
+
+
+Volatility smiles are implied volatility patterns that arise in pricing financial options. In particular for a given expiration, options whose strike price differs substantially from the underlying asset's price command higher prices (and thus implied volatilities) than what is suggested by standard option pricing models. These options are said to be either deep in-the-money or out-of-the-money.
+
+Graphing implied volatilities against strike prices for a given expiry yields a skewed "smile" instead of the expected flat surface. The pattern differs across various markets. Equity options traded in American markets did not show a volatility smile before the Crash of 1987 but began showing one afterwards.[1] It is believed that investor reassessments of the probabilities of fat-tail have led to higher prices for out-the-money options. This anomaly implies deficiencies in the standard Black-Scholes option pricing model which assumes constant volatility and log-normal distributions of underlying asset returns. Empirical asset returns distributions, however, tend to exhibit fat-tails (kurtosis) and skew. Modelling the volatility smile is an active area of research in quantitative finance, and better pricing models such as the stochastic volatility model partially address this issue.
+
+A related concept is that of term structure of volatility, which describes how (implied) volatility differs for related options with different maturities. An implied volatility surface is a 3-D plot that plots volatility smile and term structure of volatility in a consolidated three-dimensional surface for all options on a given underlying asset.

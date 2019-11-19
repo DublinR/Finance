@@ -1,0 +1,64 @@
+\section{PRMIA 1.B.1 General Characteristics of Bonds} 
+
+\subsection{1.B.1.4.3 Inflation Indexed Bonds}
+
+
+%============================================================================
+
+1)
+2)
+3)
+4)
+5) 
+6)
+7) 
+8) Convexity
+9) Conclusions
+%==============================================================================%
+
+In 1938, Federick Macaulay conceived the idea of a measurement call the Duration to measure the Interest Rate Risk. It combines the maturity of a bond and the coupon rate and can be thought of as how long it takes for the price of a bond to be recovered.
+%==============================================================================%
+\subsection{Macaulay Duration}
+Macaulay Duration can be calculated as follows:
+
+Duration=(Present Value of Cash Flow at Time tt)Bond Market rice
+
+t - the time period of the cash flow. If the number of years to maturity is 10 then t is 1 to 10.
+Present Value of Cash Flow at Time t - The present value of the cash flow is discounted using the Yield to Maturity.
+Bond Market Price - The present value of all cash flows of the bond.
+%===============================================================================================%
+Macaulay duration is the weighted average maturity of cash flows. Consider some set of fixed cash flows. The present value of these cash flows is:
+\[V = \sum_{i=1}^{n}PV_i \]
+The Macaulay duration is defined as:[1][2][3][5]
+(1)     \[MacD = \frac{\sum_{i=1}^{n}{t_i PV_i}} {V} = \sum_{i=1}^{n}t_i \frac{{PV_i}} {V} \]
+where:
+\begin{itemize}
+\item $i$ indexes the cash flows,
+\item $PV_i$ is the present value of the ith cash payment from an asset,
+\item $t_i$ is the time in years until the ith payment will be received,
+\item $V$ is the present value of all future cash payments from the asset.
+\end{itemize}
+In the second expression the fractional term is the ratio of the cash flow $PV_i$ to the total PV. These terms add to 1.0 and serve as weights for a weighted average. Thus the overall expression is a weighted average of time until cash flow payments, with weight $\frac{PV_i}{V}$  being the proportion of the asset's present value due to cash flow i.
+%=========================================================================================%
+\subsection{Example}
+
+Consider a 2-year bond with face value of $100, a 20\% semi-annual coupon, and a yield of 4\% semi-annually compounded. The total PV will be:
+\[V = \sum_{i=1}^{n}PV_i = \sum_{i=1}^{n} \frac{CF_i} {(1+y/k)^{k \cdot t_i}} = \sum_{i=1}^{4} \frac{10} {(1+.04/2)^i} + \frac{100} {(1+.04/2)^4} = 9.804 + 9.612 + 9.423 + 9.238 + 92.385 = 130.462 \]
+
+The Macaulay duration is then
+\[MacD = 0.5 \cdot \frac{9.804} { 130.462} + 1.0 \cdot \frac{9.612} { 130.462} + 1.5 \cdot \frac{9.423} { 130.462} + 2.0 \cdot \frac{9.238} { 130.462} + 2.0 \cdot \frac{92.385} { 130.462}= 1.777 years .\]
+
+The simple formula above gives (y/k =.04/2=.02, c/k = 20/2 = 10):
+\[MacD = \left[ \frac {(1.02)}{0.02} - \frac {100(1.02)+4(10-2)}{10[(1.02)^{4}-1]+2} \right] / 2 = 1.777 years\]
+
+The modified duration, measured as percentage change in price per one percentage point change in yield, is:
+\[ModD = \frac{MacD}{(1+y/k)} = \frac{1.777}{(1+.04/2)} = 1.742\% \]
+\% change in price per 1 percentage point change in yield)
+
+The DV01, measured as dollar change in price for a $100 nominal bond for a one percentage point change in yield, is
+\[DV01 = \frac{ModD \cdot 130.462} {100} = 2.27 \] ($\$$ per 1 percentage point change in yield)
+where the division by 100 is because modified duration is the percentage change.
+
+%=====================================================================================================%
+\subsection{Bond Convexity}
+Bond Convexity is defined formally as the degree to which the duration changes when the yield to maturity changes. It can be used to account for the inaccuracies of the Modified Duration approximation. On top of that, if we assume two bonds will provide the same duration and yield then the bond with the greater convexity will be less affected by interest rate change. This can be easily visualized from the diagram above where the greater the "curvature", the lesser the price drop when interest rate increase.

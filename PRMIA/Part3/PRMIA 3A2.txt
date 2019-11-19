@@ -1,0 +1,48 @@
+\documentclass[]{article}
+
+\usepackage{graphicx}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%-------------------------------------------------------------------------%
+\begin{document}
+%----------------------------------------------------------%
+\section{Portfolio Models of Credit Loss}
+\begin{itemize}
+\item Define Default
+\item Describe newapproaches to Credit Risk Modelling
+\item Explain Credit VaR
+\item Define Credit Migration
+\item Describe the Credit Metrics Framework
+\item Demonstrate Credit VaR for a single Bond/Loan
+\item Demonstrate the Estimation of Default and Rating Changes Correlations
+\item Describe the Credit VaR approach of a Bond/Loan Portfolio
+\item Explain the Conditional Transition Probabilities – CreditPortfolioView Model
+\item Explain the idea of contingent claim approach in creditrisk measurement
+\item Demonstrate Structural Model of Default Risk: Merton’s (1974) Model
+\item Demonstrate Estimation of Credit Risk as a function of Equity Value
+\item Demonstrate the KMV approach
+\item Demonstrate the Actuarial Approach
+\end{itemize}
+
+%-----------------------------------------------------------------------------------------%
+\newpage
+\section{Advanced Value at Risk Models}
+
+\begin{itemize}
+\item Discuss the issues related to the three VaR models
+\item Demonstrate Standard Distributional Assumptions
+\item Demonstrate Volatility Clustering Models
+\item Demonstrate impact of Volatility Clustering on VaR
+\item Discuss GARCH model
+\item Demonstrate VaRwith the Student’s t distribution
+\item Explain VaRwith Extreme Value Theory
+\item Demonstrate VaRwith Normal Mixtures
+\item Describe the rules for disaggregating risk
+\item Demonstrate Incremental VaR (IVaR)
+\item Demonstrate Component VaR (CVaR)
+\item Demonstrate Principal Component Analysis (PCA)
+\item Explain VaR with PCA
+\end{itemize}
+\end{document}

@@ -1,0 +1,62 @@
+BASEL II provide some guidance on the types of operational risk failure and their associated loss events.
+
+
+------------------------------------------
+3.C.1.1
+Introduction to the ORM framework
+
+Operational risk is an integral part of doing business " as old as the banking industry itself".
+
+Need for a clearly articulated definition of operational risk,
+
+------------------------------------------
+3.C.1.2
+
+Evidence of Operational Failures
+
+- Collapse of Barings
+- Improper Trading of Funds
+------------------------------------------
+3.C.1.3
+Defining Operational Risk
+-Choose a definition that is in line with the institueion's philosophy
+-taking proactive stances on managing operational risk
+-Causal Based Definition
+-
+------------------------------------------
+3.C.1.4
+
+-Basel Definitions
+Business Lines
+Loss Event Types
+
+------------------------------------------
+3.C.1.5
+Aim and Scope of Operational Risk Management
+
+- Prevent Operational Risk
+------------------------------------------
+3.C.1.6
+
+1) Core Operational Capability
+2) People
+3) Client Relations
+4) Transactional and Booking Systems
+5) Reconciliation and Accounting
+6) Change and new activities
+7) Expense and Revenue Volatility
+------------------------------------------
+3.A.4.6 Historical Scenarios
+Choosing Event Periods
+Specifying Shock Factors
+Missing Shock Factors
+
+------------------------------------------
+3.A.4.6.2 Specifying Shock Factors
+PCA is useful for generating realistic "shocked" yields in a tractable manner.
+
+Only the first three factors need to be shocked,
+
+Secondly these factors need to be orthogonal, so that they can be shocked independently
+
+------------------------------------------

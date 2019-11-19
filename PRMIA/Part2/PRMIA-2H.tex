@@ -1,0 +1,26 @@
+Cox,Ross Rubenstein Parameterization
+
+In finance, the binomial options pricing model (BOPM) provides a generalizable numerical method for the valuation of options. The binomial model was first proposed by Cox, Ross and Rubinstein in 1979.[1] Essentially, the model uses a “discrete-time” (lattice based) model of the varying price over time of the underlying financial instrument. 
+In general, Georgiadis showed that binomial options pricing models do not have closed-form solutions.[2]
+
+
+%===================================================================================%
+\subsection{Create the Binomial Price Tree}
+The tree of prices is produced by working forward from valuation date to expiration.
+
+At each step, it is assumed that the underlying instrument will move up or down by a specific factor (u or d) per step of the tree (where, by definition, u \ge 1 and 0 < d \le 1 ). So, if S is the current price, then in the next period the price will either be S_{up} = S \cdot u or S_{down} = S \cdot d.
+
+The up and down factors are calculated using the underlying volatility, \sigma, and the time duration of a step, t, measured in years (using the day count convention of the underlying instrument). From the condition that the variance of the log of the price is \sigma^2 t, we have:
+
+\[u = e^{\sigma\sqrt t}\]
+\[d = e^{-\sigma\sqrt t} = \frac{1}{u}.\]
+Above is the original Cox, Ross, & Rubinstein (CRR) method; there are other techniques for generating the lattice, such as "the equal probabilities" tree. The Trinomial tree is a similar model, allowing for an up, down or stable path.
+
+The CRR method ensures that the tree is recombinant, i.e. if the underlying asset moves up and then down (u,d), the price will be the same as if it had moved down and then up (d,u) — here the two paths merge or recombine. This property reduces the number of tree nodes, and thus accelerates the computation of the option price.
+
+This property also allows that the value of the underlying asset at each node can be calculated directly via formula, and does not require that the tree be built first. The node-value will be:
+
+\[S_n = S_0 \times u ^{N_u - N_d}]\]
+Where N_u is the number of up ticks and N_d is the number of down ticks.
+
+%========================================================================================%

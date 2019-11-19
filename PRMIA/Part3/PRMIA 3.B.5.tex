@@ -1,0 +1,224 @@
+
+\section{PRMIA 3.B.5 Portfolio Models of Credit Losses}
+%==================================================================================%
+
+1)
+
+2)
+
+3) 
+
+4) 
+
+5)  
+
+6) The KMV approach
+
+7) The Actuarial Approach
+
+8) Conclusion
+
+ 
+
+PRMIA 3.B.5 Portfolio Models of Credit Losses
+
+3.B.5.1 Introduction
+
+3.B.5.2 What actually drives credit risk at the portfolio level?
+
+3.B.5.3 Credit Migration Framework
+
+3.B.5.3.1 Credit VaR of of a bond/loan portfolio
+
+3.B.5.4 Conditional Transition Probabilities
+
+3.B.5.3 Estimation of correlation.
+
+3.B.5.6 The KMV approach
+
+3.B.5.7 The Actuarial Approach
+
+%-------------------------------------------------------------------------------%
+
+\subsection{3.B.5.1 Introduction }
+
+
+3.B.5.2 What actually drives credit risk at the portfolio level?
+
+Factors
+
+1) Credit standing of individual obligors
+
+2) Concentration Risk
+
+3) State of the Economy
+
+
+The credit VaR of a loan portfolio is derived in the same fashion as market risk, but with a longer time horizon.
+
+
+\subsection{3.B.5.3 Credit Migration Framework }
+
+Methodology based on the estimation of the forward.distribution of changes in a portfolio.
+
+Transition matrix. 
+
+
+
+3.B.5.3.1 Credit VaR of of a bond/loan portfolio
+
+Steps derive the asset return thresholds for each rating category
+
+Estimate the correlation between each pair of obligors asset return.
+
+Generate return scenarios according to their joint normal distribution.
+
+
+3.B.5.3.2 Estimation of correlation.
+
+
+Default correlation
+
+
+CreditMetrics makes use of the stock price of a firm as a proxy for its asset value, as the true asset value is not directly observable.
+
+\begin{itemize}
+\item estimation of the correlation between equity returns of various obligors.
+\item Cholesky Decomposition.
+\item Spread curves
+\item Importance sampling
+\end{itemize}
+%==================================================================================%
+\subsection{3.B.5.4 Conditional Transition Probabilities}
+\begin{itemize}
+\item Logit Functions
+\item Limitations
+\end{itemize}
+%==================================================================================%
+3.B.5.5 The Contingent Claim Approach to Measuring Credit Risk
+
+Merton’s Model (1974) : Structural Model of Default Risk
+
+
+Assumptions
+
+1) The Loan is the only debt instrument of the firm.
+
+2) The only other source of financing is equity.
+
+\subsection{3.B.5.6 The KMV approach}
+
+Expected Default Frequency (EDF)
+
+\begin{itemize}
+\item KMV model is based on the structural approach to calculate EDF (credit risk is driven by the ﬁrm value process).
+\item It is best when applied to publicly traded companies, where the value of equity is determined by the stock market.
+\item 
+The market information contained in the ﬁrm's stock price and balance sheet are translated into an implied risk of default.
+\end{itemize}
+
+
+Key features in KMV model
+
+
+1. Distance to default ratio determines the level of default risk.
+•
+This key ratio compares the ﬁrms net worth to its volatility.
+
+•
+The net worth is based on values from the equity market, so it is both timely and superior estimate of the ﬁrm value.
+
+
+2. Ability to adjust to the credit cycle and ability to quickly reﬂect any deterioration in credit quality.
+
+3. Work best in highly eﬃcient liquid market conditions.
+
+
+Three steps to derive the actual probabilities of default:
+
+1. Estimation of the market value and volatility of the ﬁrm asset value.
+
+2. Calculation of the distance to default, an index measure of default risk.
+
+3. Scaling of the distance to default to actual probabilities of default using a default database.
+
+
+\subsection{Weaknesses of the KMV approach}
+
+a) It requires some subjective estimation of the input parameters.
+
+b) It is difficult to construct theoretical EDFs without the assumption of normality of asset returns.
+
+c) Private ﬁrms EDFs can be calculated only by using some comptbability analysis based on accounting data.
+
+d) It does not distinguish among different types of long-term bonds according to their seniority, collateral, covenants or convertibility.
+
+
+\subsection{Example}
+
+KMV’s Merton-type approach to probability of default (PD) 
+
+
+Assume:
+1.
+The expected (future) value of firm assets is $30 billion
+
+2.
+The volatility of the firm's assets is 30%
+
+3.
+The firm's default threshold is $12 billion; i.e., the model predicts a default if assets drop below $12 billion. 
+
+
+In this case, this is because the firm has $12 billion in long-term debt and $6 billion in short-term debt ([50%][$12] + [$6] = $12)
+
+\subsection{Question:}
+\begin{enumerate}
+\item What is the normalized distance to default?
+\item Estimate the expected default frequency (EDF) which is KMV's name for probability of default (PD).
+\end{enumerate}
+
+\subsection{Solutions}
+
+The normalized distance to default is the number of standard deviations from the expected asset value (so the full formula predicts forward from current asset value) to the default threshold. In this case, [30-12]/[(30\%)($30)] = 2.
+
+We could assume normality to produce a PD. Specifically, NORMSDIST(-2) = 2.3\%. 
+
+However, KMV does not fit a cumulative normal distribution; they map historical defaults to the DD. 
+
+We can expect "fat tails," so we probably could say the following: EDF > 2.3\%.
+
+%-------------------------------------------------------------------------------%
+
+
+
+ 
+\subsection{3.B.5.7 The Actuarial Approach}
+
+CreditRisk+
+
+CreditRisk+ ,released by Credit Suisse Financial Products, is a purely actuarial model.
+
+ 
+
+CreditRisk+ applies an actuarial science framework to the derivation of the loss distribution of a loan/bond portfolio.
+
+ 
+
+CreditRisk+ has the advantage that is relatively easy to implement.
+
+ 
+
+Poisson Distribution
+
+ 
+%===============================================================================%
+\subsection{Three Step Process}
+
+\begin{itemize}
+\item Step 1 : Probability generating function for each band.
+\item Step 2 : Probability generating function for an Entire portfolio.
+\item Step 3 : Loss Distribution for the entire portfolio.
+\end{itemize}
+ 
+

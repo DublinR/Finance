@@ -1,0 +1,72 @@
+
+
+%---------------------------------------------------%
+\section{Advanced Value-at-risk Models PRMIA 3.A.3}
+
+\begin{enumerate}
+\item Introduction to VaR Models
+\item Standard Distributional Assumptions
+\item Models of Volatility Clustering
+\item Volatility Clustering and VaR
+\item Impact of Volatility Clustering on VaR
+\item VaR with Student's $t$ distribution
+\item Alternative Solutions to Non-Normality
+\item Extreme Value Theory
+\item GARCH Models
+\item Normal Mixture
+\item Rules for disaggreting risk
+\item Incremental VaR
+\item Component VaR
+\item Decomposition of VaR
+\item Principal Component Analysis (PCA)
+\item Explaining VaR with PCA.
+\item Summary
+\end{enumerate}
+
+%---------------------------------------------------%
+\subsection{PRMIA 3A33}
+
+Exponential Weighted Moving Average (EWMA)
+
+\begin{itemize}
+\item Using a decay factor 0.94
+\item Tolerance Level 1\%
+\end{itemize}
+
+The effective number of data points need to estimate the covariance is?
+Answer 74
+
+\subsection*{Normal Mixture Model}
+A random variable has a mixed distribution if its value will be obtained by randomly drawing from one of the values to be obtained for two or more other random variables. The random variable’s distribution is a mixture of the other random variables’ distributions.
+%-----------------------------------------------------------------------------------%
+
+DEFINITION OF 'INCREMENTAL VALUE AT RISK'
+The amount of uncertainty added to or subtracted from a portfolio by purchasing a new investment or selling an existing investment. Investors use incremental VaR to determine whether a particular investment should be undertaken, given its likely impact on potential portfolio losses. The idea of incremental VaR was developed by Kevin Dowd in his 1999 book, "Beyond Value at Risk: The New Science of Risk Management."
+
+
+%-----------------------------------------------------------------------------------%
+
+
+
+Use EWMA measures of variance and covariance to calculate the covariance matrix
+
+%-------------------------------------------------------------%
+
+\subsection{EWMA Equation of Variance}
+The EWMA Equation of Variance is 
+
+\[ \hat{\sigma}^2_t = (1-\lambda) r^2_{t-1} + \lambda \hat{\sigma}^2_{t-1} \]
+
+\begin{itemize}
+\item $\sigma^2$ variance
+\item $\lambda$ smoothing constant
+\item $r_{t-1}$ last day returns
+\end{itemize}
+
+Analogus Equation for Asset 1 and 2
+
+\[ \hat{\sigma}_{1,2,t} = (1-\lambda) r_{1,t-1} r_{2,t-1} + \lambda \hat{\sigma}_{1,2,t-1} \]
+
+\begin{itemize}
+\item $r_{n,t-1}$ yesterday's return for assets
+end{itemize}

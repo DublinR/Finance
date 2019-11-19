@@ -1,0 +1,171 @@
+
+\section{The Greeks}
+\subsection{Beta}
+
+Beta is calculated using regression analysis, and you can think of beta as the tendency of a security's returns to respond to swings in the market. A beta of 1 indicates that the security's price will move with the market. A beta of less than 1 means that the security will be less volatile than the market.
+
+ 
+
+A beta of greater than 1 indicates that the security's price will be more volatile than the market. For example, if a stock's beta is 1.2, it's theoretically 20\% more volatile than the market.
+
+
+Many utilities stocks have a beta of less than 1. Conversely, most high-tech Nasdaq-based stocks have a beta of greater than 1, offering the possibility of a higher rate of return, but also posing more risk.
+
+ 
+
+
+Beta is a risk metric employed primarily in the equity markets. It measures the systematic risk of a single instrument or an entire portfolio. William Sharpe (1964) first used the notion in his landmark paper introducing the capital asset pricing model (CAPM). The name "beta" was applied later.
+
+Beta describes the sensitivity of an instrument or portfolio to broad market movements. The stock market (represented by an index such as the S&P 500 or FT-100) is assigned a beta of 1.0. By comparison, a portfolio (or instrument) which has a beta of 0.5 will tend to participate in broad market moves, but only half as much as the market overall. A portfolio (or instrument) with a beta of 2.0 will tend to benefit or suffer from broad market moves twice as much as the market overall.
+
+The formula for beta is.
+
+\[ \frac{  \mbox{Cov} (z_p, Z_m)}{ \sigma^2_m}\]
+
+
+
+
+where
+
+\begin{itemize}
+\item $\mbox{Cov} (z_p, Z_m)$ is the covariance between the portfolio (or instrument) return and the market return, and
+\item $\sigma^2_m$ is the variance of the market's return (volatility squared).
+\end{itemize}
+ 
+
+Both quantities are calculated using simple returns. Beta is generally estimated from historical price time series. For example, 60 trading days of simple returns might be used with sample estimators for covariance and variance.
+
+It is possible to construct negative beta portfolios. Approaches include 
+
+\begin{itemize}
+
+    \item  holding stocks (such as gold mining stocks) that tend to move against the market,
+
+    \item  shorting stocks, or
+
+    \item  putting on suitable options spreads.
+
+\end{itemize} 
+
+Beta is sometimes used as a metric of a portfolio's market risk. This can be misleading because beta does not capture specific risk. Because of specific risk, a portfolio can have a low beta but still be highly volatile. Its price fluctuations will simply have a low correlation with those of the overall market.
+
+
+
+
+
+%============================================================================================================%
+\subsection*{1.A.8.2 Put Call Parity}
+
+\[max(s(T) - K,0) - max(K-S(T),0) = S-K\]
+
+\begin{itemize}
+\item S(T) value of underlying asset at time T
+\end{itemize}
+
+%============================================================================================================%
+\subsection*{Binomial Option Pricing Model}
+
+
+1.A.8.3 One-step Binomial Model and the riskless portfolio
+
+
+Parameterrs
+\begin{itemize}
+\item Current Levels of Stock (100)
+\item Contingent Stock Levels (99 and 101)
+\item Probability of each contigency ($p_u$ = 0.6, $p_d = 0.4$
+\item Risk Free Interest Rate $r_f$.
+\end{itemize}
+
+Assume stock price move is over one day (today to tomorrow)
+Lets Introduce an option on this stock, that expires tomorrow.
+
+If the stock price rises, tthe call has a payoff of 1. If the stock price falls, the call is worthless
+
+We cant price the value of an option using simple expectation, since it would ignore the risk of the option pay-off.
+
+%----------------------------%
+\subsection*{The Greeks}  % 1.A.8
+
+\begin{itemize}
+\item V : value of option
+\item Theta ($ \theta $) \[ \theta = \frac{\partial V}{\partial t} \]
+\item Rho ($ \rho $) \[ \rho = \frac{\partial V}{\partial r} \]
+\item Delta ($ \Delta $) \[ \Delta = \frac{\partial V}{\partial s} \]
+\item Gamma ($ \Gamma $) \[ \Gamma = \frac{\partial^2 V}{\partial s^2} \]
+\item Vega ($ \vega $) \[ \vega = \frac{\partial V}{\partial \sigma} \]
+\end{itemize}
+
+%----------------------------%
+
+\subsection*{Delta Hedging}
+
+
+\begin{itemize}
+
+\item Stock price $S$ can rise to $us$ or fall to $vs$
+\item The choice of $u$ and $v$ is governed by the volability of the underlying asset and time step.
+\item Set up the hedged portfolio. At this stage, you will not know how much of the underlying asset to hedge with, so call the
+quantity held short $DELL$.
+\item Choose $DELL$ such that the portfolio values are the same whether the asset moves up or down.
+\item Discount this portfolio value to the present and calculate the current option value.
+\end{itemize}
+
+\textbf{Formulae}
+\begin{itemize}
+\item $u = 1 + \sigma \sqrt{dt}$
+\item $v = 1 - \sigma \sqrt{dt}$
+\item $p = 1/2 + \frac{\mu \sqrt{dt}}{2\sigma}$
+\end{itemize}
+%==================================================%
+
+\begin{itemize}
+\item $\mu$ drift
+\item $\sigma$ volatility
+\end{itemize}
+
+
+
+
+%==================================================%
+\subsection*{Example}  % 1.A.8.4
+
+Pricing an Option with a binomial model
+
+\begin{itemize}
+\item A European Call Option over a certain stock has a term of 6 months.
+\item The current stock price is \$10.00 and the strike price of the option is \$11.00
+\item The risk free rate is 4\% per annum.
+\item The volatility of the stock is 20 \%
+\end{itemize}
+
+What is the value of the option using a one-step binomial  model?
+
+\textbf{Root}\\
+\begin{itemize}
+\item s=10
+\end{itemize}
+
+\textbf{Calculations}
+\begin{itemize}
+\item $u = 1 + \sigma \sqrt{dt} = 1 + 0.2 \sqrt{0.5} = 1.1414$
+\item $d = 1 - \sigma \sqrt{dt} = 1 - 0.2 \sqrt{0.5} = 0.8585$
+
+
+\textbf{Up Scenario} \\
+\begin{itemize}
+\item $u \times s= 1.1414 \times 10 = 11.41$
+\item $V^{+} = 0.4142$
+\end{itemize}
+
+\textbf{Down Scenario} \\
+\begin{itemize}
+\item $d \times s= 0.8585 \times 10 = 8.58$
+\item $V^{-} = 0.0$
+\end{itemize}
+
+%---------------%
+
+
+
+%============================================================================================================%

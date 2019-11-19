@@ -1,0 +1,95 @@
+3.A.1 Introduction to Market Risk Management
+
+3.A.1.1 Introduction
+
+3.A.1.2 Market Risk
+
+Why is market risk management important?
+
+Distinguishing MArket Risk from Other Risks?
+
+
+3.A.1.3 Market Risk Management Tools
+
+Steps
+1) Identification
+2) Assessment
+3) Monitoring
+4) Control
+
+3.A.1.4 The Organisation of Market Risk Management
+
+4 Stylised facts
+1) The Risk management fuction should be part of a framework, controlled by the board of directors
+2) The Risk management function should operate indepedently
+3) The Risk management function should produce regular reports of exposures
+4) The Risk management process should be well-documented
+
+3.A.1.5 Market Risk Management in Fund Management
+
+1) Introduction
+2) Risk Identification
+3) Assessment
+4) Control and Mitigation
+ Selective Hedging
+ Momentary hedging
+ Managing for risk adjusted performance target
+ Capital Protection
+
+3.A.1.6 Market Risk Management in Banking
+
+1) Introduction
+2) Risk Identification
+3) Assessment
+4) Control and Mitigation
+ Delta Hedging
+
+
+3.A.1.7 Market Risk Management in Non-Financial Firms
+
+1) Introduction
+2) Risk Identification
+3) Assessment
+4) Control and Mitigation
+
+
+
+3.A.1.8 Summary of Chapter
+
+
+3.A.2.6 Historical Simulation VaR
+1) The Basic Model
+2) Weighted Historical Simulations
+3) Advantages and Disadvantages of historical approaches
+
+3.A.2.7 Mapping Positions to Risk Factors
+
+Four basic building blocks
+1) Spot Foreign Exchange Positions
+2) Equity Positions
+3) Zero-Coupon Bonds
+4) future/forward positions
+
+Mapping Spot Positions
+Mapping Equity Posiitions
+Mapping Zeo Coupon Bonds
+Mapping Forwards/Futures Positions
+
+(option VaR) Delta Gamma Positions
+
+3.A.2.8 Backtesting VaR Models
+
+Back-testing involves after-the-fact analysis of the performance of risk estimation models
+
+3.A.2.9 Why Financial Markets Are Not "Normal"
+
+Central limit Theorem - Law of Large Numbers
+
+3.A.2.10 Summary
+
+This Chapter introduces three basic VaR Models
+Analytical
+Historical Simulation
+Monte Carlo Simulation
+
+Portfolio returns are not normally distributed

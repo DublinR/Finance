@@ -1,0 +1,260 @@
+
+ 
+%======================================================%
+PRMIA 3.A.2 Introduction to VaR models
+
+These days one of the major tasks of risk managers is to measure the risk using value-at-risk (VaR) models. The basic VaR models for market risk are covered in this section.
+
+
+Introduction to Value Learning Outcome Statement at Risk Models
+
+The candidate should be able to:
+•
+ Define Value-at-Risk VaR
+
+•
+ Discuss Internal Models for Market Risk Capital
+
+•
+ Demonstrate Analytical VaR Model
+
+•
+ Explain Monte Carlo Simulation VaR model
+
+•
+ Demonstrate Historical Simulation VaR model
+
+•
+ Describe Risk Factor Mapping
+
+•
+ Demonstrate Mapping Spot Positions
+
+•
+ Demonstrate Mapping Equity Positions
+
+•
+ Demonstrate Mapping Zero-Coupon Bonds
+
+•
+ Describe Mapping Forward/Futures Positions
+
+•
+ Demonstrate Mapping Complex Positions
+
+•
+ Demonstrate Mapping Options: Delta and Delta-Gamma Approaches
+
+•
+ Describe Backtesting of VaR models
+
+•
+ Explain Central Limit Theorem and non-normality of financial markets
+
+%======================================================%
+
+
+
+PRMIA 3.A.2 Introduction to VaR models
+
+3.A.2.1 Introduction to Value at Risk Models.
+
+3.A.2.2. Definition of VaR
+
+3.A.2.4 Analytical VaR Models
+
+3.A.2.5 Monte Carlo Simulation VaR
+
+VaR Confidence and Time Horizons
+
+Sample Question 1
+
+Sample Question 2
+
+Sample Question 3: Cumulative accuracy plot
+
+
+3.A.2.1 Introduction to Value at Risk Models.
+
+limitations. correct interpretations.
+
+3.A.2.2. Definition of VaR
+
+Var is an estimate of the loss of a fixed set of trading positions that would be equalled or exceeded with a specified probability. 
+
+ 
+
+It is never correct to consider VaR as a worst case scenario.
+
+ 
+
+The use of VaR involves two arbitrarily chosen parameters - the holding period and the confidence level.
+
+3.A.2.3 Internal Models for Market Risk Rating
+
+Framewwork set out by the Basel Accord
+
+
+
+“sqaure root of time” rule
+
+3.A.2.4 Analytical VaR Models
+
+
+R is the  h-day returns are normally distributed with mean\mu and standard deviation \sigma.
+
+
+Limitations
+
+1) Market value sensitivities often are not stables as the market conditions change.
+
+2) Analytical VaR is particularly inappropriate if there are discontinuous payoffs int he portfolio.
+
+
+3.A.2.5 Monte Carlo Simulation VaR 
+
+Methodology
+
+
+Stock price S, assumed to follo a geometrix brownian motion process
+
+dss=dt +d
+
+
+: expected (per unit time) rate of return
+
+
+: is the spot of volatility of a stock price
+
+
+d: Wiener process 
+
+
+: is a drawing from the standard normal distribution
+
+
+dt: drift term
+
+
+(dt)1/2: random,term
+
+
+%======================================================%
+
+
+  
+
+3.A.2.7 VaR of Equity Portfolio
+
+
+VaR= - ZXmk=1nkxkX
+
+
+Stock market portfolios of 5 stocks
+
+
+The value of the portfolio is $1 million
+
+
+Assume equal investment in each stock xkX= 0.2
+
+
+Assume daily holding period
+
+
+Stock market beta 
+
+B= 0.7    A= 0.9 C= 0.5 D= 0.3 E= 0.1 (sum 2.5)
+
+
+Confidence intervals 95%
+
+
+VaR= 1.6451,000,0000.0250.22.5
+
+
+VaR= $20,561
+
+
+
+%======================================================%
+
+
+VaR Confidence and Time Horizons
+
+It is usual to set a very high confidence level when estimating VaR for capital requirements.
+
+ 
+
+For limit setting for managing day to day positions, it is usual to set VaR confidence levels that are neither too low to be exceed too often nor too high as to be never exceeded.
+
+ 
+
+The time horizon may be a horizon roughly corresponding to a period in which positions may be liquidated in an orderly day, which could be just one day in a highly liquid market, or a week or more for larger positions in illiquid market.
+
+ 
+
+Sample Question 1
+
+For a security with a daily standard deviation of 2%, calculate the 10-day Var at the 95% confidence interval. Assume expected daily return to be nil.
+
+
+If the daily standard deviation is 10%, the 10 day standard deviation is 0.0210= 0.063245. 
+
+The value of Z at the 95% confidence level is 1.64485.
+
+ 
+
+Therefore the Var value is 1.644850.063245 = 0.1040 , i.e 10.4%.
+%======================================================%
+Sample Question 2
+
+ 
+
+If an institution has $1000 in assets , and $800 in liabilities, what is the economic capital required to avoid insolvency at 99% level of confidence. The VaR in respect of the assets
+
+at 99% confidence over a one year period is $100.
+
+ 
+
+The economic capital required to avoid insolvenct is just the asset VaR i.e. $100. This means that if the worst case losses are realized, the institution would need to have a buffer equivalent to those losses which in the this case will be $100, and this buffer is the economic capital.
+
+ 
+
+The actual value of the liabilities is not relevant as they are considered "riskless" from the instition's point of view, i.e. they will be taken at full value. in this particular case, the institution has $200 in capital which is more than the economic required.
+
+%======================================================%
+Sample Question 3: Cumulative accuracy plot
+
+A cumulative accuracy plot measures the accuracy of credit ratings assigned by rating agencies by considering the relative ranking of obligors according to the ratings given.
+
+%======================================================%
+Introduction to Value at Risk Models (PRMIA 3.A.2)
+
+\begin{enumerate}
+\item Introduction
+\item Definition of VaR
+\item Internal Models of Market Risk Capital
+\item Analytical VaR Models
+\item Monte-Carlo Simulations
+\item Historical Simulation VaR
+\item Mapping Positions to Risk Factors
+\item Backtesting VaR Model
+\item Why Financial Markets are not normal
+\item Summary
+\end{enumerate}
+
+%--------------------------------------%
+
+\subsection{Value at Risk}
+
+This is the maximum tolerable loss that could occur with a given probability
+within a given period of time
+
+It is a widely used measure of the risk of loss on a specific portfolio of financial assets
+
+\textbf{Common parameters}
+\begin{itemize}
+\item Probability of Loss
+\item Time Horizon
+\end{itemize}

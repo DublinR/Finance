@@ -1,0 +1,100 @@
+PRMIA 3
+Part 3
+market risk
+ 
+Advanced VAR models
+  principal component analysis
+
+distance to default calculations
+http://www.moodyskmv.com/research/whitepaper/ModelingDefaultRisk.pdf
+ 
+1) Duration and Convexivity  3.C.2  <maths> 45 mins
+2) Cash flow mapping  -  <maths> 30 mins
+3) Greeks    -  <fin> 30 mins
+4) Volatility Smiles/ Smirls -  <fin> 10 mins
+5) Var    3.A.2	<fin> 150 mins
+6) Calculation of Var   3.A.2   30 mins
+7) Historical Monte Carlo VaR 3.A.2   30 mins
+8) Covariance Matrices  3.A.3 3.A.4	<maths> 45 mins
+9) market risk limits  3.A.1   30 mins
+10) Stress testing   3.A.4   120 mins
+11) Raroc   3.0.1,-2,-4,-5  40 mins 
+12) Alternatice measures 3.A.1, 3.A.3  150 mins 
+13) Types of Credit Risk 3.B.1,-2,-3  50 mins
+14) Actuarial Methods  3.B.4, 3.B.5  30 mins
+15) EAD & LGD   3.B.2,-5,-6  30 mins
+16) Rating Agencies  3.B.4   20 mins
+17) Settlement Risk  3.B.3   40 mins
+18) Marginal Cumulative Risk 3.B.4   30 mins
+19) Transition Matrices  3.B.4, 3.B.5  45 mins
+20) Matrices & Migrations 3.B.5   50 mins
+21) Credit DErivatives  3.B.6   90 mins
+22) REcovery Rate Distributions 3.B.2   20 mins
+23) Implied Default  3.B.4   30 mins
+24) MErton KMV approach  3.B.5   40 mins
+25) Raroc EC allocation  3.0.1-5,3.B.6  35 mins
+26) Operational Risk  3.C.1   60 mins
+27) Insurance ReInsurance       3.C.1,3.C.2  20 mins
+28) Causal Models  3.C.1,3,C.2  20 mins
+29) Risk Management Processes 3.C.2   70 mins
+30) Loss Event DB  3.C.2,3.C.3  40 mins
+31) Raroc    3.0.1-5,3.c.3  30 mins
+14)
+ 
+Nassim Taleb is a famous critic of the currently accepted VAR framework
+
+Historical simulation is used to compute VaR.
+
+The variance/covariance approach is not effective for measuring optins risk because it
+does not take into account 2nd order curvature effects.
+
+Sensitivity test deermine the effect of a single market risk factor whereas scenario
+analysis determines the impact of multiple market risk factos on a portfolio.
+
+Credit risk will be decreased with netting, more postions and counterparties.
+
+Balance of payments is a factor for foreign currency rating.
+
+KMV's EDF is a function of the firms capital structure, the volatility of the asset
+returns and the current asset value.
+
+ECAI: External Credit Assessment Institute.
+
+EWMA and GARCH don assume constant volatitlity. They assume serial correaltion
+is present in financial asset return series.
+
+VAR analysis should be complemented by stress testing becasue stree testing identifies
+low probability losses beyond the usual VaR measures. It does not
+however provide a maximum loss.
+
+Moody's rting measures over the life of a security.
+1) the likelihood that the issuer will default on a security
+2) the amount of the loss  after a default occurs.
+
+Operational risk is any financial risk other than market and credit risk.
+
+J.P. Morgan creditmetrics uses correlation of equity returns to estimate
+defaul correlations.
+Default Correlations can be estimated by rating changes.
+
+International asset position is a critical element in assessing sovereign credit.
+
+The KMV model uses the following to estimate the probability of default for a firm
+- Stock Price volatility
+- the market value of the firm's equity
+- the book value of a firm's debt
+
+According to the FSA, Operational Risk is the risk resulting form
+    -human fallibility
+    -Technology shortcomings
+    -External factors
+
+Equity price volatility is used to estimate the probability of defualt in the KMV model.
+
+causal networks are very suitable for high frequency/low severity operational losses.
+they explain losses in terms of a sequence of random variables.
+
+The value of "Effective Maturity" for corporate exposures under the IRB foundation approach is 2.5 years.
+
+Price controls is an indirec impact of sovereign risk on corporate rating.
+Delta normal is appropriate for the fixed income work, unless it contains many mortgage backed securites.

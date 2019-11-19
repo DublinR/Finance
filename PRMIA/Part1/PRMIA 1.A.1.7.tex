@@ -1,0 +1,76 @@
+\section{Kappa Indices}
+
+Semi-variance of a risky asset is defined as the expected value of the squared deviation of returns below the expected return.
+
+The \textbf{lower partial moment} of order $n$ where $n>0$ of a random return $R$, given the threshold return $\tau$, is defined as
+
+\[LPM_n(\tau) = E\left[ max(\tau-R,0)^n\right] \]
+
+%====================================================================%
+The kappa indices
+
+\[ K_n(\tau) =  frac{\mu-\tau}{[LMP_n(\tau)]^{1/n}} \]
+
+The second order index is called the \textbf{sortino index}.
+
+The first order kappa index is closely related to the ``omega statistics".
+
+Omega is the ratio of the expected return above the threshold $\tau$ over the expected return threshold $\tau$.
+
+\[  \omega(\tau) = \frac{E[max(R-\tau,0)]}{E[max(R-\tau,0)]} \]
+
+%-----------------------------------------%
+
+% PRMIA 1.A.1.7
+
+\subsection{Sharpe Ratio}
+The Sharpe Ratio is a measure for calculating risk-adjusted return, and this ratio has become the industry standard for such calculations. It was developed by Nobel laureate William F. Sharpe. The Sharpe ratio is the average return earned in excess of the risk-free rate per unit of volatility or total risk
+
+
+Classical Forms
+\[SR_B = \frac{E[B] - r_f}{S_b}\]
+
+\begin{itemize}
+\item
+\end{itemize}
+\subsubsection{Examples}
+
+Suppose the asset has an expected return of 15\% in excess of the risk free rate. We typically do not know if the asset will have this return; suppose we assess the risk of the asset, defined as standard deviation of the asset's excess return, as 10%. The risk-free return is constant. Then the Sharpe ratio (using the old definition) will be 1.5 (R - R_f = 0.15  and \sigma = 0.10 ).
+
+For an example of calculating the more commonly used ex-post Sharpe ratio - which uses realized rather than expected returns - based on the contemporary definition, consider the following table of weekly returns.
+
+
+Date
+
+Asset Return
+
+S&P 500 total return
+
+Excess Return
+
+7/6/2012 -0.0050000 -0.0048419 -0.0001581 
+7/13/2012 0.0010000 0.0017234 -0.0007234 
+7/20/2012 0.0050000 0.0046110 0.0003890 
+
+We assume that the asset is something like a large-cap U.S. equity fund which would logically be benchmarked against the S&P 500. The mean of the excess returns is -0.0001642 and the (population) standard deviation is 0.0005562248, so the Sharpe ratio is -0.0001642/0.0005562248, or -0.2951444.
+
+%==================================================================================================%
+\subsubsection{Adjusted Sharpe Ratio}
+
+p initial value of derivative
+
+
+\[ ASR = \frac{E[B] - r_f}{S_b}
+
+
+\[ASR = \frac{E[B] - r_f}{S_b} + \frac{(1+r_f)(1-p)}{S_b} 
+\]
+
+
+%PRMIA 1.A.1.7
+
+\subsection{'Modified Sharpe Ratio'}
+
+A ratio used to calculate the risk-adjusted performance of an asset or a business strategy. 
+The modified Sharpe ratio is a version of the original Sharpe ratio amended to include skewed/abnormal data. 
+It is calculated by dividing the excess returns by the modified value at risk.

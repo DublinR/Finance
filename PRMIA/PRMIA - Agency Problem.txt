@@ -1,0 +1,14 @@
+PRMIA 
+Agency Problem - choosing the stress scenario
+
+
+\begin{itemize}
+\item Shareholders - focus on return of equity
+\item Bond holders - 
+\item Regulator - Responsibility for financial stability. Moral Hazard.
+\end{itemize}
+
+Not going to management with stress test results, especially adverse results.
+
+Model Risk
+Mapping Scenarios to the P&L, BS and funding drivers is problematic.

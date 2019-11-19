@@ -1,0 +1,112 @@
+PRMIA 1.B.9 Simple Exotics 
+%--------------------------------------------------%
+
+An exotic options is an option that differs from common American or European options in terms of the underlying asset or the calculation of how or when the investor receives a certain payoff. These options are more complex than options that trade on an exchange, and generally trade over the counter.
+
+For example, one type of exotic option is known as a chooser option. This instrument allows an investor to choose whether the options is a put or call at a certain point during the option's life. Because this type of option can change over the holding period, it is not be found on a regular exchange, which is why it is classified as an exotic option.
+
+Other types of exotic options include: barrier options, Asian options, digital options and compound options, among others.
+%--------------------------------------------------%
+\section{Section 1: Introduction}
+
+Section 2: A Short History
+
+Section 3: Classifying Exotics
+
+%--------------------------------------------------%
+
+\section{Section 4: Notation}
+
+%--------------------------------------------------%
+
+\section{Section 5: Digital Options}
+
+This is an options which pays out on an asset at expiry or nothing at all, based on whether 
+the option expires in the money.
+
+The pay-off structure for a digital is characterised as being discontinuous and these types of exotic options come in four formats.
+
+\begin{itemize]
+\item[1.] Cash or nothing
+\item[2.] Asset or nothing
+\item[3.] Supershares
+\item[4.] Gap Options
+\end{itemize}
+
+%--------------------------------------------------%
+
+\subsection*{Section 6: Two Asset Options}
+
+%--------------------------------------------------%
+\subsection*{Section 7: Quantos}
+
+\begin{itemize}
+\item A quanto is a type of derivative in which the underlying is denominated in one currency, but the instrument itself is settled in another currency at some fixed rate. 
+
+\item Such products are attractive for speculators and investors who wish to have exposure to a foreign asset, but without the corresponding exchange rate risk.
+
+\item Quantos are attractive because they shield the purchaser from exchange rate fluctuations. If a US investor were to invest directly in the Japanese stocks that comprise the Nikkei, he would be exposed to both fluctuations in the Nikkei index and fluctuations in the USD/JPY exchange rate. Essentially, a quanto has an embedded currency forward with a variable notional amount. It is that variable notional amount that give quantos their name—"quanto" is short for "quantity adjusting option."
+
+\item Quanto options have both the strike price and underlier denominated in the foreign currency. At exercise, the value of the option is calculated as the option's intrinsic value in the foreign currency, which is then converted to the domestic currency at the fixed exchange rate.
+
+\item Common types of Quantos include
+
+\end{itemize}
+\begin{description}
+
+\item[Quantos Future Contracts] such as  a futures contract settled on a european stock market index which is settled in US dollars.
+
+\item[Quantos Options] In which the difference between the underlying and the fixed strike price is paid out in another currency.
+
+\item[Quantos Swaps] In which one of the counterparties pays a non-local interest rate to the other, but the notional amount is in the local currency.
+
+\end{description}
+
+%--------------------------------------------------%
+
+\subsection*{Section 8: Second Order Contracts}
+
+%--------------------------------------------------%
+
+\subsection*{Section 9: Decision Options}
+
+Section 10: Average Options
+
+Section 11:
+%--------------------------------------------------%
+Section 12:
+
+Section 13:
+Section 14: Resolution Methods
+
+Section 15: Summary
+%--------------------------------------------------%
+
+
+\section{Bermudan Options}
+These are similar to american options in that they can executed early, but instead of a single exercise date, there are
+several predetermined discrete exercise dates. These are commonly used in interest rate and FX markets.
+\subsection{pricing}
+The main difficulty in determining suitable valuation comes in the form of the boundary problem. Because of multiple exercise dates, determining
+the boundary condition in order to solve the pricing problem can be difficult. Simulation Methods are used instead.
+
+\subsection{Monte-Carlo Simulation}
+This is by far the most populare method for pricing Bermudan Options.
+
+%----------------------------------------------%
+\subsection{Lookback Options}
+These are alos known as hindsight options
+
+These are a type of path dependent option where the pay-off is dependent on the mximum or minimum asset price over the life of the option.
+The holder can look back over time to determine the pay-off.
+They generally come in two distinct forms.
+
+\begin{itemize}
+\item Floating Strike: Introduced in 1979, these can have pay-offs which are either cash or asset settled, where the strike is given as the optimal value of the underlying asset.
+They are not strictly options,per se, as they can always be exercised.
+
+\item Fixed Strike : This type of lookback option is only settled in case, and has the strike predetermined at inception, and the payoff is the maximum difference between optimal price and the strike price.
+
+
+An attractive benefit of lookback options is that they are never out of the money. On the other hand they are more expensive.
+\end{itemize}
